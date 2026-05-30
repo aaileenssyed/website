@@ -1276,22 +1276,18 @@
         <div class="section-head reveal">
           <div class="section-kicker">Labs</div>
           <h2 class="section-title">Hands-on labs currently being built.</h2>
-          <p class="section-copy">Each lab will later open into a README popup with goals, screenshots, commands, findings, and lessons learned. For now, they show momentum without pretending the work is finished.</p>
+          <p class="section-copy">Each lab will later open into a README popup with goals, screenshots, commands, findings, and lessons learned.</p>
         </div>
 
         <div class="labs-wrap reveal">
           <div class="labs-grid">
             <article class="lab-card">
-              <h3>VMware Network & Security Lab</h3>
-              <p>Secure vs vulnerable VM setup focused on segmentation, access control, monitoring evidence, and hardening notes.</p>
-              <span class="status-pill">Coming Soon</span>
-            </article>
-
-            <article class="lab-card">
-              <h3>Wireshark Packet Analysis Lab</h3>
-              <p>Packet capture walkthroughs for TCP, HTTP, DNS, connection patterns, and troubleshooting evidence.</p>
-              <span class="status-pill">Coming Soon</span>
-            </article>
+            <h3>Network Traffic Analysis: DNS, TCP Handshake & HTTPS Flow</h3>
+            <p>
+          Captured and analyzed DNS resolution, TCP 3-way handshake, and TLS/HTTPS traffic using Wireshark. Also performed DNS troubleshooting by intentionally misconfiguring DNS settings and validating results with nslookup and ping.
+             </p>
+          <span class="status-pill">Completed</span>
+          </article>
 
             <article class="lab-card">
               <h3>Nmap + Vulnerability Scanning Lab</h3>
@@ -1318,6 +1314,45 @@
         </div>
 
         <div class="projects-grid">
+          <article class="project-card reveal">
+  <div>
+    <div class="project-category">Networking / Wireshark / Troubleshooting</div>
+
+    <h3>Network Traffic Analysis: DNS, TCP Handshake & HTTPS Flow</h3>
+
+    <p>
+      Used Wireshark to capture and analyze DNS lookups, TCP
+      connection establishment, and encrypted HTTPS traffic.
+      Demonstrated practical troubleshooting by intentionally
+      breaking DNS resolution and validating the issue using
+      nslookup and ping.
+    </p>
+
+    <div class="skill-tags">
+      <span class="tag">Wireshark</span>
+      <span class="tag">DNS</span>
+      <span class="tag">TCP/IP</span>
+      <span class="tag">TLS</span>
+      <span class="tag">Networking</span>
+      <span class="tag">Troubleshooting</span>
+    </div>
+  </div>
+
+  <div class="project-actions">
+    <button class="readme-btn" data-project="networklab">
+      Open README
+    </button>
+
+    <a
+      class="preview-btn"
+      href="https://github.com/aaileenssyed/network-traffic-analysis-lab"
+      target="_blank"
+      rel="noopener"
+    >
+      View GitHub
+    </a>
+  </div>
+</article>
           <article class="project-card reveal">
             <div>
               <div class="project-category">Cybersecurity / GRC / AI</div>
@@ -1534,6 +1569,56 @@
 
   <script>
     const readmes = {
+      networklab: {
+  title: "Network Traffic Analysis: DNS, TCP Handshake & HTTPS Flow",
+  html: `
+    <h4>Overview</h4>
+    <p>
+      This networking lab demonstrates how a browser communicates
+      with a website through DNS resolution, TCP connection setup,
+      and HTTPS encryption.
+    </p>
+
+    <h4>Tools Used</h4>
+    <ul>
+      <li>Wireshark</li>
+      <li>Windows Command Prompt</li>
+      <li>nslookup</li>
+      <li>ping</li>
+      <li>Web Browser</li>
+    </ul>
+
+    <h4>Lab Activities</h4>
+    <ul>
+      <li>Reviewed local IP configuration, DNS server, and default gateway.</li>
+      <li>Resolved a website's IP address using nslookup.</li>
+      <li>Captured DNS query and response packets.</li>
+      <li>Captured the TCP three-way handshake.</li>
+      <li>Observed TLS/HTTPS communication over port 443.</li>
+      <li>Intentionally misconfigured DNS settings to simulate a failure.</li>
+      <li>Verified connectivity using ping and DNS troubleshooting techniques.</li>
+    </ul>
+
+    <h4>Key Finding</h4>
+    <p>
+      If direct IP connectivity works but domain names cannot be
+      resolved, DNS is often the root cause of the problem.
+    </p>
+
+    <h4>Skills Demonstrated</h4>
+    <p>
+      Network troubleshooting, packet analysis, DNS resolution,
+      TCP/IP fundamentals, HTTPS/TLS analysis, Wireshark usage,
+      and root-cause investigation.
+    </p>
+
+    <h4>Repository</h4>
+    <p>
+      GitHub:
+      https://github.com/aaileenssyed/network-traffic-analysis-lab
+    </p>
+  `
+},
       auditready: {
         title: "AuditReady AI",
         html: `
