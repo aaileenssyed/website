@@ -1107,6 +1107,7 @@
             <a class="btn btn-primary" href="Aaileen_Sarwar_Syed_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/aaileensyed" target="_blank" rel="noopener">LinkedIn</a>
             <a class="btn btn-secondary" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <button class="btn btn-secondary" type="button" data-title="Interactive Skills Matrix" data-url="https://aaileenssyed.github.io/skills-matrix/">Skills Matrix</button>
             <a class="btn btn-secondary" href="mailto:aaileenuni@gmail.com">Email Me</a>
           </div>
         </div>
@@ -1231,6 +1232,18 @@
               <span class="tag">Claude 101</span><span class="tag">Google AI Studio</span><span class="tag">Prompt Engineering</span><span class="tag">AI Search Evaluation</span><span class="tag">Product Feedback</span>
             </div>
           </article>
+        </div>
+
+        <div class="content-card reveal" style="margin-top: 24px;">
+          <div class="section-kicker">Interactive Skillset Box</div>
+          <h3 style="font-size: 1.55rem; line-height: 1.05; letter-spacing: -0.052em; margin-bottom: 12px;">Interactive Skills Matrix</h3>
+          <p style="color: var(--muted); margin-bottom: 18px;">
+            A live skills matrix that opens inside this portfolio. It is powered by a separate GitHub Pages page, so the skill data can be updated from its JSON file without rewriting this portfolio section.
+          </p>
+          <div class="actions">
+            <button class="btn btn-primary" type="button" data-title="Interactive Skills Matrix" data-url="https://aaileenssyed.github.io/skills-matrix/">Open Skills Matrix</button>
+            <a class="btn btn-secondary" href="https://aaileenssyed.github.io/skills-matrix/" target="_blank" rel="noopener">Open Full Page</a>
+          </div>
         </div>
       </div>
     </section>
@@ -1725,8 +1738,10 @@
     document.querySelectorAll("[data-url]").forEach((button) => {
       button.addEventListener("click", () => {
         const url = button.dataset.url;
+        const title = button.dataset.title || "Live Preview";
+        browserFrame.title = title;
         browserFrame.src = url;
-        browserAddress.textContent = url;
+        browserAddress.textContent = `${title} — ${url}`;
         browserModal.classList.add("active");
         document.body.style.overflow = "hidden";
       });
