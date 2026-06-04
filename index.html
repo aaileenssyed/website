@@ -1075,15 +1075,15 @@
 
       <div class="nav-right">
         <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#labs">Labs</a>
-          <a href="#highlights">Highlights</a>
-          <a href="#contact">Contact</a>
-        </nav>
+  <a href="#experience">Experience</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#labs">Labs</a>
+  <a href="#highlights">Highlights</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
 
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode">
           <span class="theme-dot"></span>
@@ -1708,7 +1708,30 @@
         `
       }
     };
+const mainContent = document.querySelector("main");
+const aboutSection = document.getElementById("about");
+const experienceSection = document.getElementById("experience");
+const certificationsSection = document.getElementById("certifications");
+const skillsSection = document.getElementById("skills");
+const projectsSection = document.getElementById("projects");
+const labsSection = document.getElementById("labs");
+const highlightsSection = document.getElementById("highlights");
+const contactSection = document.getElementById("contact");
 
+[
+  experienceSection,
+  certificationsSection,
+  skillsSection,
+  projectsSection,
+  labsSection,
+  highlightsSection,
+  aboutSection,
+  contactSection
+].forEach((section) => {
+  if (mainContent && section) {
+    mainContent.appendChild(section);
+  }
+});
     const themeToggle = document.getElementById("themeToggle");
     const themeLabel = document.getElementById("themeLabel");
     const savedTheme = localStorage.getItem("aaileen-theme");
