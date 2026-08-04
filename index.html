@@ -3,46 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aaileen Sarwar Syed | Cybersecurity AI + Network Support Portfolio</title>
-  <meta name="description" content="Portfolio of Aaileen Sarwar Syed, focused on secure and efficient network systems, IT support, cybersecurity monitoring, AI workflows, storytelling, public speaking, and security documentation." />
+
+  <title>Aaileen Sarwar Syed | IT Support, Cybersecurity & AI Literacy</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Aaileen Sarwar Syed, a cybersecurity graduate in Chicago building toward IT support, technical support, SOC/NOC, IAM, entry-level cybersecurity, AI literacy, documentation, and public communication."
+  />
 
   <style>
     :root {
-      --bg: #0f1117;
-      --bg-soft: #161923;
-      --panel: rgba(255, 255, 255, 0.055);
-      --panel-strong: rgba(255, 255, 255, 0.09);
-      --text: #f7f3f6;
-      --muted: #b9b4bc;
-      --muted-2: #918b96;
-      --line: rgba(255, 255, 255, 0.12);
-      --rose: #f4a7c5;
-      --rose-strong: #ff6fae;
-      --rose-deep: #bd4777;
-      --lilac: #c8b6ff;
-      --white: #ffffff;
-      --green: #a7f3d0;
-      --yellow: #fde68a;
-      --shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
-      --radius-xl: 28px;
-      --radius-lg: 20px;
-      --radius-md: 14px;
-      --max: 1180px;
-    }
-
-    body.light {
-      --bg: #fff8fb;
-      --bg-soft: #fff0f6;
-      --panel: rgba(255, 255, 255, 0.74);
-      --panel-strong: rgba(255, 255, 255, 0.92);
-      --text: #211720;
-      --muted: #6f6270;
-      --muted-2: #8a7d8a;
-      --line: rgba(70, 33, 55, 0.13);
-      --white: #241922;
+      --bg: #fffaf7;
+      --panel: #ffffff;
+      --panel-soft: #fff3f6;
+      --text: #22181f;
+      --muted: #6f6470;
+      --muted-2: #918792;
+      --line: rgba(70, 33, 55, 0.14);
+      --accent: #d94f86;
+      --accent-soft: #ffe0eb;
+      --accent-2: #7c5cff;
       --green: #047857;
-      --yellow: #9a6700;
-      --shadow: 0 24px 70px rgba(107, 55, 82, 0.14);
+      --shadow: 0 20px 60px rgba(76, 37, 55, 0.12);
+      --radius-xl: 28px;
+      --radius-lg: 18px;
+      --max: 1120px;
     }
 
     * {
@@ -58,47 +43,16 @@
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background:
-        radial-gradient(circle at top left, rgba(255, 111, 174, 0.22), transparent 34rem),
-        radial-gradient(circle at 85% 10%, rgba(200, 182, 255, 0.18), transparent 30rem),
-        linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 42%, var(--bg) 100%);
+        radial-gradient(circle at top left, rgba(217, 79, 134, 0.16), transparent 30rem),
+        radial-gradient(circle at 90% 5%, rgba(124, 92, 255, 0.12), transparent 28rem),
+        var(--bg);
       color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
-      transition: background 0.25s ease, color 0.25s ease;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-      background-size: 48px 48px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent 78%);
-      z-index: -2;
-    }
-
-    body.light::before {
-      background-image:
-        linear-gradient(rgba(90, 45, 68, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(90, 45, 68, 0.035) 1px, transparent 1px);
+      line-height: 1.65;
     }
 
     a {
       color: inherit;
       text-decoration: none;
-    }
-
-    button,
-    input {
-      font: inherit;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
     }
 
     .page-shell {
@@ -111,18 +65,14 @@
       top: 0;
       z-index: 50;
       backdrop-filter: blur(18px);
-      background: rgba(15, 17, 23, 0.74);
+      background: rgba(255, 250, 247, 0.84);
       border-bottom: 1px solid var(--line);
-    }
-
-    body.light .nav {
-      background: rgba(255, 248, 251, 0.76);
     }
 
     .nav-inner {
       width: min(var(--max), calc(100% - 40px));
       margin: 0 auto;
-      min-height: 76px;
+      min-height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -134,7 +84,7 @@
       align-items: center;
       gap: 12px;
       font-weight: 850;
-      letter-spacing: -0.035em;
+      letter-spacing: -0.03em;
       white-space: nowrap;
     }
 
@@ -144,16 +94,10 @@
       border-radius: 14px;
       display: grid;
       place-items: center;
-      color: #141018;
-      background: linear-gradient(135deg, var(--rose), var(--lilac));
-      box-shadow: 0 12px 30px rgba(255, 111, 174, 0.22);
+      background: linear-gradient(135deg, #f4a7c5, #c8b6ff);
+      color: #20131d;
       font-weight: 950;
-    }
-
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 16px;
+      box-shadow: 0 12px 28px rgba(217, 79, 134, 0.18);
     }
 
     .nav-links {
@@ -162,50 +106,25 @@
       gap: 20px;
       color: var(--muted);
       font-size: 0.92rem;
-    }
-
-    .nav-links a {
-      transition: color 0.2s ease;
+      font-weight: 700;
     }
 
     .nav-links a:hover {
-      color: var(--white);
+      color: var(--accent);
     }
 
-    .theme-toggle {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255,255,255,0.055);
-      color: var(--text);
-      padding: 8px 11px;
-      cursor: pointer;
-      font-weight: 850;
-      font-size: 0.84rem;
-    }
-
-    .theme-dot {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--rose), var(--lilac));
-      box-shadow: 0 0 0 4px rgba(244, 167, 197, 0.12);
+    section {
+      padding: 84px 0;
     }
 
     .hero {
-      min-height: calc(100vh - 76px);
-      display: grid;
-      align-items: center;
-      padding: 88px 0 70px;
+      padding: 92px 0 78px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.16fr) minmax(330px, 0.84fr);
-      gap: 54px;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 52px;
       align-items: center;
     }
 
@@ -214,34 +133,34 @@
       align-items: center;
       gap: 9px;
       padding: 9px 14px;
-      border: 1px solid rgba(244, 167, 197, 0.24);
+      border: 1px solid rgba(217, 79, 134, 0.22);
       border-radius: 999px;
-      color: var(--rose);
-      background: rgba(244, 167, 197, 0.08);
-      font-weight: 800;
-      font-size: 0.87rem;
+      color: var(--accent);
+      background: rgba(217, 79, 134, 0.07);
+      font-weight: 850;
+      font-size: 0.86rem;
       margin-bottom: 24px;
     }
 
     .pulse {
       width: 8px;
       height: 8px;
-      border-radius: 50%;
-      background: var(--rose-strong);
-      box-shadow: 0 0 0 8px rgba(255, 111, 174, 0.13);
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 7px rgba(217, 79, 134, 0.12);
     }
 
     h1 {
-      font-size: clamp(3.6rem, 8vw, 7rem);
+      font-size: clamp(3.4rem, 8vw, 6.8rem);
       line-height: 0.9;
       letter-spacing: -0.085em;
-      max-width: 820px;
       margin-bottom: 26px;
+      max-width: 820px;
     }
 
     .hero-title-accent {
       color: transparent;
-      background: linear-gradient(135deg, var(--text) 8%, var(--rose-strong) 45%, var(--lilac) 92%);
+      background: linear-gradient(135deg, var(--text) 10%, var(--accent) 45%, var(--accent-2) 95%);
       -webkit-background-clip: text;
       background-clip: text;
     }
@@ -249,23 +168,22 @@
     .tagline {
       font-size: clamp(1.28rem, 2vw, 1.7rem);
       line-height: 1.35;
-      color: var(--text);
-      max-width: 780px;
       letter-spacing: -0.035em;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
+      max-width: 780px;
     }
 
     .hero-copy {
       color: var(--muted);
       font-size: 1.04rem;
       max-width: 740px;
-      margin-bottom: 34px;
+      margin-bottom: 32px;
     }
 
     .actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
+      gap: 12px;
       align-items: center;
     }
 
@@ -278,8 +196,7 @@
       border-radius: 999px;
       font-weight: 850;
       border: 1px solid transparent;
-      cursor: pointer;
-      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
     }
 
     .btn:hover {
@@ -287,48 +204,23 @@
     }
 
     .btn-primary {
-      color: #151018;
-      background: linear-gradient(135deg, var(--rose), var(--lilac));
-      box-shadow: 0 18px 42px rgba(255, 111, 174, 0.23);
+      color: #ffffff;
+      background: var(--accent);
+      box-shadow: 0 18px 40px rgba(217, 79, 134, 0.22);
     }
 
     .btn-secondary {
       color: var(--text);
       border-color: var(--line);
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.72);
     }
 
-    .hero-panel {
-      position: relative;
+    .hero-card {
       border: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,0.105), rgba(255,255,255,0.045));
+      background: rgba(255, 255, 255, 0.78);
       box-shadow: var(--shadow);
       border-radius: var(--radius-xl);
       padding: 28px;
-      overflow: hidden;
-    }
-
-    .hero-panel::before {
-      content: "";
-      position: absolute;
-      inset: -80px -120px auto auto;
-      width: 220px;
-      height: 220px;
-      background: radial-gradient(circle, rgba(255,111,174,0.33), transparent 68%);
-      pointer-events: none;
-    }
-
-    .status-card {
-      position: relative;
-      z-index: 1;
-    }
-
-    .status-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      align-items: flex-start;
-      margin-bottom: 28px;
     }
 
     .mini-label {
@@ -340,78 +232,66 @@
       margin-bottom: 8px;
     }
 
-    .status-top h2 {
+    .hero-card h2 {
       font-size: 1.55rem;
       letter-spacing: -0.04em;
-      line-height: 1.05;
-    }
-
-    .availability {
-      white-space: nowrap;
-      font-size: 0.82rem;
-      color: var(--green);
-      border: 1px solid rgba(167, 243, 208, 0.22);
-      background: rgba(167, 243, 208, 0.08);
-      padding: 8px 11px;
-      border-radius: 999px;
-      font-weight: 850;
+      line-height: 1.1;
+      margin-bottom: 22px;
     }
 
     .metric-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 12px;
-      margin-bottom: 26px;
+      margin-bottom: 22px;
     }
 
     .metric {
       padding: 18px;
       border: 1px solid var(--line);
-      background: rgba(255,255,255,0.04);
+      background: var(--panel-soft);
       border-radius: 18px;
     }
 
     .metric strong {
       display: block;
-      font-size: 1.55rem;
-      letter-spacing: -0.05em;
+      font-size: 1.45rem;
+      letter-spacing: -0.045em;
       line-height: 1;
       margin-bottom: 7px;
     }
 
     .metric span {
-      display: block;
       color: var(--muted);
+      display: block;
       font-size: 0.87rem;
     }
 
-    .target-list {
+    .chip-list,
+    .skill-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 9px;
+      gap: 8px;
     }
 
-    .chip {
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(255,255,255,0.05);
+    .chip,
+    .tag {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
       color: var(--text);
       border-radius: 999px;
-      padding: 8px 11px;
+      padding: 7px 10px;
       font-weight: 750;
-      font-size: 0.84rem;
-    }
-
-    section {
-      padding: 86px 0;
+      font-size: 0.82rem;
     }
 
     .section-head {
       max-width: 790px;
-      margin-bottom: 36px;
+      margin-bottom: 34px;
     }
 
     .section-kicker {
-      color: var(--rose-strong);
+      color: var(--accent);
       font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.18em;
@@ -420,7 +300,7 @@
     }
 
     .section-title {
-      font-size: clamp(2.25rem, 4vw, 4rem);
+      font-size: clamp(2.2rem, 4vw, 3.8rem);
       line-height: 1;
       letter-spacing: -0.07em;
       margin-bottom: 16px;
@@ -433,28 +313,32 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: 0.82fr 1.18fr;
-      gap: 24px;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 22px;
     }
 
     .quote-card,
-    .content-card {
+    .content-card,
+    .project-card,
+    .experience-card,
+    .proof-card,
+    .contact-panel {
       border: 1px solid var(--line);
       border-radius: var(--radius-xl);
-      background: var(--panel);
-      padding: 30px;
-      box-shadow: 0 20px 58px rgba(0,0,0,0.2);
+      background: rgba(255, 255, 255, 0.78);
+      padding: 28px;
+      box-shadow: 0 18px 50px rgba(76, 37, 55, 0.08);
     }
 
     .quote-card {
       background:
-        linear-gradient(145deg, rgba(255,111,174,0.15), rgba(255,255,255,0.045)),
-        rgba(255,255,255,0.05);
+        radial-gradient(circle at top right, rgba(217, 79, 134, 0.14), transparent 20rem),
+        #ffffff;
     }
 
     .quote-card p {
       font-size: 1.35rem;
-      line-height: 1.35;
+      line-height: 1.36;
       letter-spacing: -0.04em;
       margin-bottom: 22px;
     }
@@ -468,7 +352,7 @@
     .soft-list li {
       list-style: none;
       display: grid;
-      grid-template-columns: 24px 1fr;
+      grid-template-columns: 22px 1fr;
       gap: 12px;
     }
 
@@ -477,153 +361,33 @@
       width: 9px;
       height: 9px;
       margin-top: 8px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--rose), var(--lilac));
-      box-shadow: 0 0 0 7px rgba(255,111,174,0.09);
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 0 7px rgba(217, 79, 134, 0.09);
     }
 
-    .skills-grid {
+    .focus-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
     }
 
-    .skill-card {
-      min-height: 300px;
+    .focus-card {
       border: 1px solid var(--line);
       border-radius: var(--radius-lg);
-      padding: 24px;
-      background: rgba(255,255,255,0.048);
-      transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
-    }
-
-    .skill-card:hover {
-      transform: translateY(-6px);
-      background: rgba(255,255,255,0.075);
-      border-color: rgba(244, 167, 197, 0.28);
-    }
-
-    .skill-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      background: rgba(244,167,197,0.13);
-      color: var(--rose-strong);
-      margin-bottom: 18px;
-      font-weight: 950;
-    }
-
-    .skill-card h3 {
-      font-size: 1.08rem;
-      line-height: 1.18;
-      letter-spacing: -0.035em;
-      margin-bottom: 12px;
-    }
-
-    .skill-card p {
-      color: var(--muted);
-      font-size: 0.92rem;
-      margin-bottom: 18px;
-    }
-
-    .skill-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-
-    .tag {
-      padding: 6px 9px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.09);
-      color: var(--text);
-      font-size: 0.74rem;
-      font-weight: 750;
-    }
-
-    .linkedin-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-    }
-
-    .highlight-card {
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      background: rgba(255,255,255,0.048);
+      background: rgba(255, 255, 255, 0.72);
       padding: 22px;
-      min-height: 190px;
     }
 
-    .highlight-card strong {
-      display: block;
-      font-size: 1.5rem;
-      line-height: 1;
-      letter-spacing: -0.055em;
-      margin-bottom: 12px;
-      color: var(--rose-strong);
-    }
-
-    .highlight-card h3 {
-      line-height: 1.15;
+    .focus-card h3 {
+      font-size: 1.1rem;
       letter-spacing: -0.035em;
-      margin-bottom: 9px;
+      margin-bottom: 8px;
     }
 
-    .highlight-card p {
+    .focus-card p {
       color: var(--muted);
-      font-size: 0.91rem;
-    }
-
-    .labs-wrap {
-      border: 1px solid var(--line);
-      border-radius: var(--radius-xl);
-      background:
-        radial-gradient(circle at top right, rgba(255,111,174,0.12), transparent 28rem),
-        rgba(255,255,255,0.045);
-      padding: 28px;
-    }
-
-    .labs-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-    }
-
-    .lab-card {
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.04);
-      border-radius: 20px;
-      padding: 22px;
-      min-height: 210px;
-    }
-
-    .lab-card h3 {
-      font-size: 1.02rem;
-      letter-spacing: -0.03em;
-      line-height: 1.2;
-      margin-bottom: 10px;
-    }
-
-    .lab-card p {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 18px;
-    }
-
-    .status-pill {
-      display: inline-flex;
-      align-items: center;
-      border-radius: 999px;
-      padding: 7px 10px;
-      font-size: 0.76rem;
-      font-weight: 950;
-      color: var(--yellow);
-      background: rgba(253, 230, 138, 0.09);
-      border: 1px solid rgba(253, 230, 138, 0.2);
+      font-size: 0.94rem;
     }
 
     .projects-grid {
@@ -633,46 +397,20 @@
     }
 
     .project-card {
-      position: relative;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-xl);
-      background: rgba(255,255,255,0.052);
-      padding: 28px;
-      min-height: 335px;
+      min-height: 320px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
-    }
-
-    .project-card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at top right, rgba(255,111,174,0.18), transparent 18rem);
-      opacity: 0;
-      transition: opacity 0.25s ease;
-      pointer-events: none;
+      transition: transform 0.2s ease, border-color 0.2s ease;
     }
 
     .project-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(244, 167, 197, 0.3);
-      background: rgba(255,255,255,0.074);
-    }
-
-    .project-card:hover::before {
-      opacity: 1;
-    }
-
-    .project-card > * {
-      position: relative;
-      z-index: 1;
+      transform: translateY(-5px);
+      border-color: rgba(217, 79, 134, 0.28);
     }
 
     .project-category {
-      color: var(--rose-strong);
+      color: var(--accent);
       font-size: 0.76rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
@@ -681,48 +419,22 @@
     }
 
     .project-card h3 {
-      font-size: 1.55rem;
-      line-height: 1.05;
-      letter-spacing: -0.052em;
+      font-size: 1.45rem;
+      line-height: 1.1;
+      letter-spacing: -0.045em;
       margin-bottom: 14px;
     }
 
     .project-card p {
       color: var(--muted);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .project-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      align-items: center;
       margin-top: 20px;
-    }
-
-    .readme-btn,
-    .preview-btn,
-    .soon-btn {
-      border: 1px solid var(--line);
-      color: var(--text);
-      border-radius: 999px;
-      padding: 10px 14px;
-      background: rgba(255,255,255,0.055);
-      font-weight: 850;
-      cursor: pointer;
-      transition: background 0.2s ease, transform 0.2s ease;
-    }
-
-    .readme-btn:hover,
-    .preview-btn:hover,
-    .soon-btn:hover {
-      background: rgba(244,167,197,0.13);
-      transform: translateY(-1px);
-    }
-
-    .soon-btn {
-      cursor: default;
-      color: var(--muted);
     }
 
     .experience-list {
@@ -730,14 +442,10 @@
       gap: 16px;
     }
 
-    .experience-item {
+    .experience-card {
       display: grid;
       grid-template-columns: 280px 1fr;
       gap: 28px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-xl);
-      background: rgba(255,255,255,0.048);
-      padding: 28px;
     }
 
     .experience-meta {
@@ -753,7 +461,7 @@
     }
 
     .experience-body h3 {
-      font-size: 1.32rem;
+      font-size: 1.26rem;
       letter-spacing: -0.04em;
       margin-bottom: 8px;
     }
@@ -763,70 +471,41 @@
       margin-bottom: 14px;
     }
 
-    .cert-layout {
+    .proof-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 20px;
-      align-items: stretch;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
     }
 
-    .cert-feature {
-      border: 1px solid rgba(244, 167, 197, 0.24);
-      border-radius: var(--radius-xl);
+    .proof-card h3 {
+      font-size: 1.12rem;
+      letter-spacing: -0.035em;
+      margin-bottom: 8px;
+    }
+
+    .proof-card p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .human-section {
       background:
-        radial-gradient(circle at top right, rgba(255, 111, 174, 0.16), transparent 23rem),
-        rgba(255,255,255,0.055);
-      padding: 32px;
-      min-height: 320px;
-    }
-
-    .cert-feature h3 {
-      font-size: clamp(1.8rem, 3vw, 3rem);
-      line-height: 1;
-      letter-spacing: -0.065em;
-      margin-bottom: 16px;
-    }
-
-    .cert-feature p {
-      color: var(--muted);
-      margin-bottom: 22px;
-    }
-
-    .cert-list {
-      display: grid;
-      gap: 12px;
-    }
-
-    .cert-row {
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: rgba(255,255,255,0.048);
-      padding: 18px;
-    }
-
-    .cert-row h4 {
-      letter-spacing: -0.03em;
-      margin-bottom: 5px;
-    }
-
-    .cert-row p {
-      color: var(--muted);
-      font-size: 0.92rem;
+        radial-gradient(circle at top left, rgba(217, 79, 134, 0.12), transparent 22rem),
+        rgba(255, 255, 255, 0.38);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
     }
 
     .contact-panel {
-      border: 1px solid rgba(244, 167, 197, 0.26);
-      border-radius: calc(var(--radius-xl) + 8px);
-      background:
-        radial-gradient(circle at 12% 0%, rgba(255,111,174,0.18), transparent 24rem),
-        linear-gradient(135deg, rgba(255,255,255,0.075), rgba(255,255,255,0.04));
-      padding: clamp(30px, 6vw, 64px);
       text-align: center;
-      box-shadow: var(--shadow);
+      padding: clamp(32px, 6vw, 64px);
+      background:
+        radial-gradient(circle at 12% 0%, rgba(217, 79, 134, 0.14), transparent 24rem),
+        #ffffff;
     }
 
     .contact-panel h2 {
-      font-size: clamp(2.2rem, 5vw, 4.5rem);
+      font-size: clamp(2.2rem, 5vw, 4.3rem);
       line-height: 0.95;
       letter-spacing: -0.075em;
       margin-bottom: 16px;
@@ -834,7 +513,7 @@
 
     .contact-panel p {
       color: var(--muted);
-      max-width: 700px;
+      max-width: 760px;
       margin: 0 auto 28px;
       font-size: 1.05rem;
     }
@@ -846,216 +525,50 @@
       font-size: 0.92rem;
     }
 
-    .reveal {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      z-index: 100;
-      background: rgba(5, 6, 10, 0.74);
-      backdrop-filter: blur(14px);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-
-    .modal-backdrop.active {
-      display: flex;
-    }
-
-    .modal {
-      width: min(920px, 100%);
-      max-height: min(760px, 86vh);
-      overflow: hidden;
-      border-radius: 28px;
-      border: 1px solid var(--line);
-      background: var(--bg);
-      box-shadow: 0 30px 90px rgba(0,0,0,0.58);
-      display: grid;
-      grid-template-rows: auto 1fr;
-    }
-
-    .browser-modal {
-      width: min(1120px, 100%);
-      max-height: min(820px, 90vh);
-    }
-
-    .modal-header,
-    .browser-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 16px 18px;
-      border-bottom: 1px solid var(--line);
-      background: rgba(255,255,255,0.055);
-    }
-
-    .modal-header h3 {
-      letter-spacing: -0.04em;
-      line-height: 1.1;
-    }
-
-    .browser-dots {
-      display: flex;
-      gap: 7px;
-    }
-
-    .browser-dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.28);
-    }
-
-    .browser-address {
-      flex: 1;
-      min-width: 0;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      color: var(--muted);
-      padding: 8px 13px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      font-size: 0.9rem;
-    }
-
-    .modal-close {
-      width: 40px;
-      height: 40px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.06);
-      color: var(--text);
-      cursor: pointer;
-      font-size: 1.3rem;
-    }
-
-    .modal-body {
-      overflow: auto;
-      padding: 28px;
-      color: var(--text);
-    }
-
-    .browser-frame-wrap {
-      height: min(690px, 74vh);
-      background: #ffffff;
-    }
-
-    .browser-frame-wrap iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
-      background: #ffffff;
-    }
-
-    .readme-content h4 {
-      color: var(--rose-strong);
-      margin: 22px 0 8px;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.13em;
-    }
-
-    .readme-content p,
-    .readme-content li {
-      color: var(--muted);
-    }
-
-    .readme-content ul {
-      padding-left: 20px;
-      margin: 8px 0 16px;
-    }
-
-    .readme-content code {
-      color: var(--rose-strong);
-      background: rgba(244,167,197,0.08);
-      padding: 2px 6px;
-      border-radius: 8px;
-    }
-
-    @media (max-width: 1060px) {
-      .nav-links {
-        display: none;
-      }
-    }
-
     @media (max-width: 980px) {
       .hero-grid,
       .about-grid,
-      .experience-item,
-      .cert-layout {
+      .experience-card {
         grid-template-columns: 1fr;
       }
 
-      .skills-grid,
-      .labs-grid,
-      .linkedin-grid {
+      .focus-grid,
+      .proof-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 680px) {
+    @media (max-width: 720px) {
       .page-shell,
       .nav-inner {
         width: min(100% - 28px, var(--max));
       }
 
-      .brand span:last-child {
+      .nav-links {
         display: none;
       }
 
       .hero {
-        padding-top: 56px;
+        padding-top: 60px;
       }
 
       h1 {
-        font-size: clamp(3.2rem, 17vw, 5rem);
-      }
-
-      .hero-grid {
-        gap: 28px;
-      }
-
-      .hero-panel,
-      .quote-card,
-      .content-card,
-      .labs-wrap,
-      .project-card,
-      .experience-item,
-      .cert-feature,
-      .contact-panel {
-        border-radius: 22px;
-        padding: 22px;
+        font-size: clamp(3.1rem, 17vw, 5rem);
       }
 
       .metric-grid,
-      .skills-grid,
-      .labs-grid,
       .projects-grid,
-      .linkedin-grid {
+      .focus-grid,
+      .proof-grid {
         grid-template-columns: 1fr;
-      }
-
-      .actions {
-        align-items: stretch;
       }
 
       .btn {
         width: 100%;
+      }
+
+      .actions {
+        align-items: stretch;
       }
 
       section {
@@ -1073,753 +586,444 @@
         <span>Aaileen Sarwar Syed</span>
       </a>
 
-      <div class="nav-right">
-        <nav class="nav-links" aria-label="Primary navigation">
-  <a href="#experience">Experience</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#labs">Labs</a>
-  <a href="#highlights">Highlights</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode">
-          <span class="theme-dot"></span>
-          <span id="themeLabel">Light</span>
-        </button>
-      </div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#proof">Proof</a>
+        <a href="#human">Human Side</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
   <main id="top">
-<section class="hero">
+    <section class="hero">
       <div class="page-shell hero-grid">
-        <div class="hero-copy-wrap reveal">
-          <div class="eyebrow"><span class="pulse"></span> Cybersecurity AI + Network Support Portfolio</div>
+        <div>
+          <div class="eyebrow"><span class="pulse"></span> Technical support • Cybersecurity • AI literacy • Storytelling</div>
+
           <h1>Aaileen <span class="hero-title-accent">Sarwar Syed</span></h1>
-          <p class="tagline">Building secure and efficient network systems through AI, smart workflows, and clear technical storytelling.</p>
+
+          <p class="tagline">
+            I turn confusing technical problems into clear notes, useful documentation, and calmer next steps.
+          </p>
+
           <p class="hero-copy">
-            Cybersecurity graduate and early-career Network/IT professional focused on troubleshooting, monitoring, firewall logic, VMware labs, AI-assisted security workflows, and documentation that helps teams understand what happened, why it happened, and what to do next.
+            I’m a cybersecurity graduate in Chicago building toward IT support, technical support,
+            security operations, IAM, SOC/NOC, and AI-literate technical workflows. This site is part
+            portfolio, part proof of work, and part public archive of becoming.
           </p>
 
           <div class="actions">
             <a class="btn btn-primary" href="Aaileen_Sarwar_Syed_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/aaileensyed" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn btn-secondary" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-            <button class="btn btn-secondary" type="button" data-title="Interactive Skills Matrix" data-url="https://aaileenssyed.github.io/skillset/">Skills Matrix</button>
+            <a class="btn btn-secondary" href="https://github.com/aaileenssyed" target="_blank" rel="noopener">GitHub</a>
             <a class="btn btn-secondary" href="mailto:aaileenuni@gmail.com">Email Me</a>
           </div>
         </div>
 
-        <aside class="hero-panel reveal" aria-label="Portfolio focus summary">
-          <div class="status-card">
-            <div class="status-top">
-              <div>
-                <div class="mini-label">Currently Targeting</div>
-                <h2>Network, IT, NOC, and entry-level cybersecurity roles.</h2>
-              </div>
-              <span class="availability">Open to roles</span>
+        <aside class="hero-card" aria-label="Portfolio focus summary">
+          <div class="mini-label">Currently building toward</div>
+          <h2>IT support, technical support, SOC/NOC, IAM, and entry-level cybersecurity roles.</h2>
+
+          <div class="metric-grid">
+            <div class="metric">
+              <strong>ISC2 CC</strong>
+              <span>Certified in Cybersecurity</span>
             </div>
 
-            <div class="metric-grid">
-              <div class="metric">
-                <strong>TEDx</strong>
-                <span>speaker, storyteller, and public communicator</span>
-              </div>
-              <div class="metric">
-                <strong>30+</strong>
-                <span>weekly support tickets handled during IT internship</span>
-              </div>
-              <div class="metric">
-                <strong>15+</strong>
-                <span>client environments monitored with PRTG, Sophos, Webroot</span>
-              </div>
-              <div class="metric">
-                <strong>3.9</strong>
-                <span>MS Cybersecurity GPA at Lewis University</span>
-              </div>
+            <div class="metric">
+              <strong>30+</strong>
+              <span>weekly support tickets handled during IT internship</span>
             </div>
 
-            <div class="target-list">
-              <span class="chip">Network Support Technician</span>
-              <span class="chip">IT Support Analyst</span>
-              <span class="chip">NOC Technician</span>
-              <span class="chip">SOC Analyst Tier 1</span>
-              <span class="chip">Junior Cybersecurity Analyst</span>
-              <span class="chip">Technical Support Engineer</span>
+            <div class="metric">
+              <strong>15+</strong>
+              <span>client environments monitored with PRTG, Sophos, and Webroot</span>
             </div>
+
+            <div class="metric">
+              <strong>3.9</strong>
+              <span>M.S. Cybersecurity GPA at Lewis University</span>
+            </div>
+          </div>
+
+          <div class="chip-list">
+            <span class="chip">Technical Support Engineer</span>
+            <span class="chip">IT Support Specialist</span>
+            <span class="chip">NOC Analyst</span>
+            <span class="chip">SOC Analyst I</span>
+            <span class="chip">IAM Support</span>
+            <span class="chip">Chicago</span>
           </div>
         </aside>
       </div>
     </section>
-<section id="about">
+
+    <section id="about">
       <div class="page-shell">
-        <div class="section-head reveal">
+        <div class="section-head">
           <div class="section-kicker">About</div>
-          <h2 class="section-title">Bringing technical problem-solving and clear communication into the same room.</h2>
+          <h2 class="section-title">Technical enough to show proof. Human enough to feel like me.</h2>
           <p class="section-copy">
-            Working at the intersection of network support, cybersecurity monitoring, AI-assisted workflows, documentation, and public communication. Focused on solving technical problems clearly and explaining them in a way that helps people make better decisions.
+            I’m building my career at the intersection of technical troubleshooting, cybersecurity,
+            documentation, AI literacy, and public communication.
           </p>
         </div>
 
         <div class="about-grid">
-          <div class="quote-card reveal">
-            <p>“Focused on making technical work useful, understandable, and strong enough to support real decisions.”</p>
-            <div class="target-list">
+          <div class="quote-card">
+            <p>“I like making confusing technical things feel less scary, more useful, and easier to act on.”</p>
+
+            <div class="chip-list">
               <span class="chip">Chicago, IL</span>
-              <span class="chip">MS Cybersecurity</span>
+              <span class="chip">M.S. Cybersecurity</span>
+              <span class="chip">ISC2 CC</span>
               <span class="chip">TEDx Speaker</span>
               <span class="chip">Storyteller</span>
-              <span class="chip">Girls Who Code President</span>
             </div>
           </div>
 
-          <div class="content-card reveal">
+          <div class="content-card">
             <ul class="soft-list">
-              <li>Hands-on experience supporting LAN/WAN troubleshooting, Cisco router/switch environments, DNS, DHCP, VPN workflows, endpoint alerts, and remote support.</li>
-              <li>Documenting incident evidence, root-cause notes, escalation steps, configuration logic, and technical findings for both technical and management audiences.</li>
-              <li>Building depth through VMware labs, packet analysis, vulnerability scanning, firewall rule testing, AI-security projects, and ongoing CCNA and Security+ preparation.</li>
-              <li>TEDxLewis University speaker, storyteller, and public speaker with experience turning complex technical ideas into clear messages for different audiences.</li>
+              <li>I’m a cybersecurity M.S. graduate from Lewis University with a background in IT support, technical troubleshooting, documentation, user support, networking fundamentals, and security-focused labs.</li>
+              <li>My work sits somewhere between technical problem-solving and human communication: figuring out what broke, documenting what happened, explaining it clearly, and thinking about how better workflows can prevent the same problem next time.</li>
+              <li>I’m currently building toward roles in IT support, technical support, IT operations, SOC/NOC, IAM support, and entry-level cybersecurity.</li>
+              <li>Outside of the technical side, I care about storytelling, public speaking, international student experiences, AI literacy, and helping beginners feel less lost while they build their own paths.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-<section id="experience">
+    <section id="focus">
       <div class="page-shell">
-        <div class="section-head reveal">
+        <div class="section-head">
+          <div class="section-kicker">Current Focus</div>
+          <h2 class="section-title">What I’m building right now.</h2>
+          <p class="section-copy">
+            I’m not just waiting for the next opportunity. I’m building the habits, projects, and proof that support the roles I’m applying for.
+          </p>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <h3>Ticket-writing muscle memory</h3>
+            <p>Practicing how to document issues clearly with summaries, user impact, troubleshooting steps, escalation notes, and customer-facing updates.</p>
+          </article>
+
+          <article class="focus-card">
+            <h3>Support + security fundamentals</h3>
+            <p>Brushing up on Windows, Microsoft 365, networking, IAM, logs, troubleshooting, and incident response basics.</p>
+          </article>
+
+          <article class="focus-card">
+            <h3>Getting Hired in Public</h3>
+            <p>Documenting the job hunt as an international cybersecurity new grad in Chicago: applying, learning, building, networking, and showing up anyway.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="page-shell">
+        <div class="section-head">
+          <div class="section-kicker">Projects</div>
+          <h2 class="section-title">Proof of work, but make it useful.</h2>
+          <p class="section-copy">
+            These projects show how I connect IT support, cybersecurity, documentation, AI workflows, and hands-on technical learning.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div>
+              <div class="project-category">IT Support / Cybersecurity / Documentation</div>
+              <h3>IT Support & Cybersecurity Playbook</h3>
+              <p>
+                A practical playbook documenting troubleshooting workflows, ticket-writing habits,
+                escalation notes, customer communication, and security-aware support practices.
+                Built to connect IT support work with IAM, SOC/NOC thinking, and entry-level cybersecurity workflows.
+              </p>
+
+              <div class="skill-tags">
+                <span class="tag">IT Support</span>
+                <span class="tag">Troubleshooting</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">Ticketing</span>
+                <span class="tag">IAM</span>
+                <span class="tag">SOC/NOC</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://github.com/aaileenssyed/its-playbook" target="_blank" rel="noopener">View GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-category">Networking / Wireshark / Troubleshooting</div>
+              <h3>Network Traffic Analysis Lab</h3>
+              <p>
+                A hands-on Wireshark lab analyzing DNS resolution, TCP connection setup,
+                HTTPS/TLS traffic, and DNS troubleshooting by intentionally breaking and validating DNS behavior.
+              </p>
+
+              <div class="skill-tags">
+                <span class="tag">Wireshark</span>
+                <span class="tag">DNS</span>
+                <span class="tag">TCP/IP</span>
+                <span class="tag">TLS</span>
+                <span class="tag">Troubleshooting</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://github.com/aaileenssyed/network-traffic-analysis-lab" target="_blank" rel="noopener">View GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-category">Cybersecurity / GRC / AI</div>
+              <h3>AuditReady AI</h3>
+              <p>
+                A cybersecurity and GRC readiness tool that maps security requirements,
+                identifies control gaps, and generates structured remediation guidance.
+                Built to explore AI-assisted security documentation and readiness workflows.
+              </p>
+
+              <div class="skill-tags">
+                <span class="tag">GRC</span>
+                <span class="tag">NIST CSF</span>
+                <span class="tag">AI Workflows</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">Cybersecurity</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://auditready-ai-five.vercel.app/" target="_blank" rel="noopener">View Live</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-category">AI + Network Security</div>
+              <h3>AI-Assisted Firewall Rule Generator</h3>
+              <p>
+                An educational security tool that converts plain-English server requirements
+                into Linux iptables rules using a default-deny model.
+                Built to show where AI can support learning while human judgment still matters.
+              </p>
+
+              <div class="skill-tags">
+                <span class="tag">Firewall</span>
+                <span class="tag">iptables</span>
+                <span class="tag">Least Privilege</span>
+                <span class="tag">Linux</span>
+                <span class="tag">AI Security</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://ai-firewall-rule-gen-zlw1.bolt.host" target="_blank" rel="noopener">View Live</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="page-shell">
+        <div class="section-head">
           <div class="section-kicker">Experience</div>
-          <h2 class="section-title">Combining support experience with monitoring, documentation, and technical communication.</h2>
-          <p class="section-copy">This section is written for hiring managers who want proof of troubleshooting, communication, ownership, and steady technical growth.</p>
+          <h2 class="section-title">Support, troubleshooting, documentation, and communication.</h2>
+          <p class="section-copy">
+            My experience sits close to where technical issues meet people, process, and clear documentation.
+          </p>
         </div>
 
         <div class="experience-list">
-          <article class="experience-item reveal">
+          <article class="experience-card">
             <div class="experience-meta">
               <strong>IT Analyst Intern</strong>
               <span>eFusion Solutions</span><br />
               <span>Oct 2022 – Jan 2023</span>
             </div>
+
             <div class="experience-body">
               <h3>Supporting network, endpoint, and client environments.</h3>
-              <p>Resolved support tickets involving Windows systems, applications, remote access, VPN connectivity, endpoint security alerts, and network troubleshooting.</p>
-              <div class="skill-tags"><span class="tag">PRTG</span><span class="tag">Sophos</span><span class="tag">Webroot</span><span class="tag">VPN</span><span class="tag">DNS/DHCP</span><span class="tag">Cisco Exposure</span></div>
+              <p>
+                Resolved 30+ weekly support tickets involving Windows systems, applications,
+                remote access, VPN connectivity, endpoint security alerts, account administration,
+                remote desktop issues, and network troubleshooting.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">Microsoft 365</span>
+                <span class="tag">Windows</span>
+                <span class="tag">VPN</span>
+                <span class="tag">PRTG</span>
+                <span class="tag">Sophos</span>
+                <span class="tag">Webroot</span>
+              </div>
             </div>
           </article>
 
-          <article class="experience-item reveal">
+          <article class="experience-card">
             <div class="experience-meta">
               <strong>Graduate Assistant</strong>
-              <span>Lewis University CEEL</span><br />
+              <span>Lewis University</span><br />
               <span>Jan 2025 – May 2026</span>
             </div>
+
             <div class="experience-body">
               <h3>Supporting operational systems, records, access guidance, and process troubleshooting.</h3>
-              <p>I supported multi-user academic systems, maintained records, improved documentation quality, and helped troubleshoot workflow and access issues for students and staff.</p>
-              <div class="skill-tags"><span class="tag">Documentation</span><span class="tag">Process Support</span><span class="tag">Reporting</span><span class="tag">Communication</span></div>
+              <p>
+                Supported student-facing academic and operational systems serving 200+ students each semester,
+                while creating documentation, reports, guides, newsletters, onboarding resources,
+                and troubleshooting support for non-technical users.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">Documentation</span>
+                <span class="tag">Process Support</span>
+                <span class="tag">Reporting</span>
+                <span class="tag">Communication</span>
+              </div>
             </div>
           </article>
 
-          <article class="experience-item reveal">
+          <article class="experience-card">
             <div class="experience-meta">
-              <strong>Google Search Priority User Program</strong>
-              <span>Google</span><br />
-              <span>Apr 2025 – Present</span>
+              <strong>Selected Participant</strong>
+              <span>Google Search Priority User Program</span><br />
+              <span>Apr 2026 – Present</span>
             </div>
+
             <div class="experience-body">
-              <h3>I evaluate AI-powered search experiences and product quality.</h3>
-              <p>I test emerging AI-powered Search and digital discovery experiences with feedback on usability, relevance, user behavior, and search experience quality.</p>
-              <div class="skill-tags"><span class="tag">AI Search</span><span class="tag">Product Feedback</span><span class="tag">Usability</span><span class="tag">Digital Trust</span></div>
+              <h3>Evaluating AI-powered search experiences and product quality.</h3>
+              <p>
+                Selected to provide structured feedback on Google Search experiences, usability,
+                user behavior, digital discovery, relevance, and emerging AI-assisted search features.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">AI Search</span>
+                <span class="tag">Product Feedback</span>
+                <span class="tag">Usability</span>
+                <span class="tag">Digital Trust</span>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-<section id="certifications">
+    <section id="proof">
       <div class="page-shell">
-        <div class="section-head reveal">
-          <div class="section-kicker">Education & Certifications</div>
-          <h2 class="section-title">My credentials support the story, not the other way around.</h2>
-          <p class="section-copy">This section is now more visible because certifications and education matter for early-career IT, network, and cybersecurity hiring.</p>
+        <div class="section-head">
+          <div class="section-kicker">Proof & Highlights</div>
+          <h2 class="section-title">The quick version.</h2>
+          <p class="section-copy">
+            Credentials, wins, and moments that support the story without turning the whole site into a resume.
+          </p>
         </div>
 
-        <div class="cert-layout">
-          <article class="cert-feature reveal">
-            <div class="section-kicker">Education</div>
-            <h3>MS Cybersecurity, Lewis University</h3>
-            <p>I graduated with a 3.9 / 4.0 GPA and focused my work around network support, cybersecurity workflows, technical documentation, AI-security projects, and practical labs.</p>
-            <div class="target-list">
-              <span class="chip">Cybersecurity</span>
-              <span class="chip">Networking</span>
-              <span class="chip">AI Security</span>
-              <span class="chip">Technical Communication</span>
-            </div>
+        <div class="proof-grid">
+          <article class="proof-card">
+            <h3>M.S. Cybersecurity</h3>
+            <p>Lewis University. GPA 3.9/4.0. Focused on cybersecurity, networking, security operations, risk, and practical labs.</p>
           </article>
 
-          <div class="cert-list reveal">
-            <article class="cert-row">
-              <h4>B.Tech Computer Science Engineering</h4>
-              <p>JNTU Hyderabad. Graduated with Honors, May 2024.</p>
-            </article>
-            <article class="cert-row">
-              <h4>Claude 101 Certification</h4>
-              <p>AI literacy and practical AI workflow learning.</p>
-            </article>
-            <article class="cert-row">
-              <h4>Google AI Professional</h4>
-              <p>Building AI fluency to get more done, faster.</p>
-            </article>
-            <article class="cert-row">
-              <h4>IBM and ISC2 Cybersecurity Specialist Professional Certificate </h4>
-              <p>A solid grasp of IT essentials, including infrastructure, operating systems, network applications, data, hardware, and software.</p>
-            </article>
-            <article class="cert-row">
-              <h4>Google Cybersecurity Professional Certificate Modules</h4>
-              <p>Cybersecurity foundations, risk, networks, and security concepts.</p>
-            </article>
-            <article class="cert-row">
-              <h4>Data Analyst Certificate — Fullstack Academy</h4>
-              <p>Data analysis, visualization, and applied analytical workflows.</p>
-            </article>
-            <article class="cert-row">
-              <h4>Cisco Cyber Defense Analyst </h4>
-              <p>Splunk, Incident response, cyber defense and Cyberwarfare.</p>
-            </article>
-            <article class="cert-row">
-              <h4>ISC2 Candidate, CC Certification in progress </h4>
-              <p>I am continuing to strengthen my networking and cybersecurity fundamentals.</p>
-            </article>
-            <article class="cert-row">
-              <h4>In Progress: Cisco CCNA + CompTIA Security+</h4>
-              <p>I am continuing to strengthen my networking and cybersecurity fundamentals.</p>
-            </article>
-            <article class="cert-row">
-              <h4>IBM Systems Analyst Professional Certificate</h4>
-              <p>Demonstrate job-ready systems analysis skills to design IT solutions that enhance business operations and data management.</p>
-            </article>
-            <article class="cert-row">
-              <h4>Akamai Network Engineering Professional Certificate</h4>
-              <p>Mastering the most up-to-date practical skills and knowledge that network operation engineers use in their daily roles.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<section id="skills">
-      <div class="page-shell">
-        <div class="section-head reveal">
-          <div class="section-kicker">Skill Stack</div>
-          <h2 class="section-title">Building a network-first foundation with cybersecurity and AI workflow depth.</h2>
-          <p class="section-copy">This site leads with practical skills that match Network Support, IT Support, NOC, SOC Tier 1, and junior cybersecurity hiring needs.</p>
-        </div>
-
-        <div class="skills-grid">
-          <article class="skill-card reveal">
-            <div class="skill-icon">01</div>
-            <h3>Networking & Infrastructure</h3>
-            <p>Focused on how systems connect, communicate, fail, and recover.</p>
-            <div class="skill-tags">
-              <span class="tag">TCP/IP</span><span class="tag">LAN/WAN</span><span class="tag">VLANs</span><span class="tag">Subnetting</span><span class="tag">DNS/DHCP</span><span class="tag">VPN</span><span class="tag">Cisco</span>
-            </div>
+          <article class="proof-card">
+            <h3>ISC2 Certified in Cybersecurity</h3>
+            <p>Issued July 2026. Strengthened foundations across security principles, access control, incident response, network security, and security operations.</p>
           </article>
 
-          <article class="skill-card reveal">
-            <div class="skill-icon">02</div>
-            <h3>Security & Monitoring</h3>
-            <p>Connecting alerts, evidence, and documentation into a clear workflow.</p>
-            <div class="skill-tags">
-              <span class="tag">Firewall Logic</span><span class="tag">Least Privilege</span><span class="tag">PRTG</span><span class="tag">Sophos</span><span class="tag">Webroot</span><span class="tag">OpenVAS</span><span class="tag">Snort</span>
-            </div>
+          <article class="proof-card">
+            <h3>3rd Place CTF</h3>
+            <p>Capture the Flame cybersecurity competition at UIC, with hands-on challenges across practical security problem-solving.</p>
           </article>
 
-          <article class="skill-card reveal">
-            <div class="skill-icon">03</div>
-            <h3>Systems, Labs & Tools</h3>
-            <p>Building confidence through virtual machines, scripting, analysis, and lab documentation.</p>
-            <div class="skill-tags">
-              <span class="tag">Linux</span><span class="tag">VMware</span><span class="tag">VirtualBox</span><span class="tag">Wireshark</span><span class="tag">Nmap</span><span class="tag">PowerShell</span><span class="tag">GitHub</span>
-            </div>
+          <article class="proof-card">
+            <h3>TEDx Speaker</h3>
+            <p>Spoke about international students, opportunity, and the importance of follow-through after education and access.</p>
           </article>
 
-          <article class="skill-card reveal">
-            <div class="skill-icon">04</div>
-            <h3>AI & Technical Communication</h3>
-            <p>Using AI as a support layer for documentation, search quality, workflows, and cybersecurity learning.</p>
-            <div class="skill-tags">
-              <span class="tag">Claude 101</span><span class="tag">Google AI Studio</span><span class="tag">Prompt Engineering</span><span class="tag">AI Search Evaluation</span><span class="tag">Product Feedback</span>
-            </div>
-          </article>
-        </div>
-
-        <div class="content-card reveal" style="margin-top: 24px;">
-          <div class="section-kicker">Interactive Skillset Box</div>
-          <h3 style="font-size: 1.55rem; line-height: 1.05; letter-spacing: -0.052em; margin-bottom: 12px;">Interactive Skills Matrix</h3>
-         
-          <div class="actions">
-            <button class="btn btn-primary" type="button" data-title="Interactive Skills Matrix" data-url="https://aaileenssyed.github.io/skillset/">Open Skills Matrix</button>
-            <a class="btn btn-secondary" href="https://aaileenssyed.github.io/skills-matrix/" target="_blank" rel="noopener">Open Full Page</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<section id="projects">
-      <div class="page-shell">
-        <div class="section-head reveal">
-          <div class="section-kicker">Projects</div>
-          <h2 class="section-title">Connecting AI, network security, and practical documentation through projects.</h2>
-          <p class="section-copy">Finished projects can open as README-style popups. Web-hosted projects can open inside a mini-browser preview popup. Unfinished work stays marked as Coming Soon until it is ready.</p>
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card reveal">
-  <div>
-    <div class="project-category">Networking / Wireshark / Troubleshooting</div>
-
-    <h3>Network Traffic Analysis: DNS, TCP Handshake & HTTPS Flow</h3>
-
-    <p>
-      Used Wireshark to capture and analyze DNS lookups, TCP
-      connection establishment, and encrypted HTTPS traffic.
-      Demonstrated practical troubleshooting by intentionally
-      breaking DNS resolution and validating the issue using
-      nslookup and ping.
-    </p>
-
-    <div class="skill-tags">
-      <span class="tag">Wireshark</span>
-      <span class="tag">DNS</span>
-      <span class="tag">TCP/IP</span>
-      <span class="tag">TLS</span>
-      <span class="tag">Networking</span>
-      <span class="tag">Troubleshooting</span>
-    </div>
-  </div>
-
-  <div class="project-actions">
-    <button class="readme-btn" data-project="networklab">
-      Open README
-    </button>
-
-    <a
-      class="preview-btn"
-      href="https://github.com/aaileenssyed/network-traffic-analysis-lab"
-      target="_blank"
-      rel="noopener"
-    >
-      View GitHub
-    </a>
-  </div>
-</article>
-          <article class="project-card reveal">
-            <div>
-              <div class="project-category">Cybersecurity / GRC / AI</div>
-              <h3>AuditReady AI</h3>
-              <p>Built as a compliance readiness tool for mapping security requirements, documentation, audit preparation, and structured security workflow support.</p>
-              <div class="skill-tags"><span class="tag">GRC</span><span class="tag">Compliance</span><span class="tag">AI Workflows</span><span class="tag">Documentation</span></div>
-            </div>
-            <div class="project-actions">
-              <button class="readme-btn" data-project="auditready">Open README</button>
-              <button class="preview-btn" data-title="AuditReady AI" data-url="https://auditready-ai-five.vercel.app/">View Live Preview</button>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div>
-              <div class="project-category">AI + Network Security</div>
-              <h3>AI-Assisted Firewall Rule and Network Security Policy Generator</h3>
-              <p>Built as an educational security tool that converts plain-English server or network requirements into Linux iptables rules using a default-deny model.</p>
-              <div class="skill-tags"><span class="tag">iptables</span><span class="tag">Least Privilege</span><span class="tag">Linux</span><span class="tag">Security Policy</span></div>
-            </div>
-            <div class="project-actions">
-              <button class="readme-btn" data-project="firewall">Open README</button>
-              <button class="preview-btn" data-title="AI-Assisted Firewall Rule and Network Security Policy Generator" data-url="https://ai-firewall-rule-gen-zlw1.bolt.host">View Live Preview</button>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div>
-              <div class="project-category">AI + Security Research</div>
-              <h3>Authentify AI — Deepfake Detection</h3>
-              <p>Developed around a YOLOv5/CNN deepfake detection model with long-range attention to classify manipulated images and support digital trust research.</p>
-              <div class="skill-tags"><span class="tag">YOLOv5</span><span class="tag">CNN</span><span class="tag">Computer Vision</span><span class="tag">AI Security</span></div>
-            </div>
-            <div class="project-actions">
-              <button class="readme-btn" data-project="authentify">Open README</button>
-              <button class="soon-btn" type="button">Live Preview Coming Soon</button>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div>
-              <div class="project-category">Blockchain + Cloud Security</div>
-              <h3>Blockchain Technique for Decentralized Cloud Environments</h3>
-              <p>Designed as a decentralized file storage concept using Ethereum smart contracts, SHA-256 hashing, and IPFS integration to improve storage reliability.</p>
-              <div class="skill-tags"><span class="tag">Ethereum</span><span class="tag">SHA-256</span><span class="tag">IPFS</span><span class="tag">Cloud Security</span></div>
-            </div>
-            <div class="project-actions">
-              <button class="readme-btn" data-project="blockchain">Open README</button>
-              <button class="soon-btn" type="button">Live Preview Coming Soon</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-<section id="labs">
-      <div class="page-shell">
-        <div class="section-head reveal">
-          <div class="section-kicker">Labs</div>
-          <h2 class="section-title">Hands-on labs currently being built.</h2>
-          <p class="section-copy">Each lab will later open into a README popup with goals, screenshots, commands, findings, and lessons learned.</p>
-        </div>
-
-        <div class="labs-wrap reveal">
-          <div class="labs-grid">
-            <article class="lab-card">
-            <h3>Network Traffic Analysis: DNS, TCP Handshake & HTTPS Flow</h3>
-            <p>
-          Captured and analyzed DNS resolution, TCP 3-way handshake, and TLS/HTTPS traffic using Wireshark. Also performed DNS troubleshooting by intentionally misconfiguring DNS settings and validating results with nslookup and ping.
-             </p>
-          <span class="status-pill">Completed</span>
-          </article>
-
-            <article class="lab-card">
-              <h3>Nmap + Vulnerability Scanning Lab</h3>
-              <p>Host discovery, service enumeration, risk notes, and scan documentation using Nmap and vulnerability scanning exposure.</p>
-              <span class="status-pill">Coming Soon</span>
-            </article>
-
-            <article class="lab-card">
-              <h3>SOC Alert Triage / Monitoring Lab</h3>
-              <p>Entry-level alert review workflow with evidence collection, severity notes, escalation language, and remediation summary.</p>
-              <span class="status-pill">Coming Soon</span>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<section id="highlights">
-      <div class="page-shell">
-        <div class="section-head reveal">
-          <div class="section-kicker">LinkedIn Highlights</div>
-          <h2 class="section-title">The moments worth noticing quickly.</h2>
-          <p class="section-copy">Highlighting the headline-worthy parts of my background: technical growth, public speaking, leadership, practical security work, and AI product feedback.</p>
-        </div>
-
-        <div class="linkedin-grid">
-          <article class="highlight-card reveal">
-            <strong>TEDx</strong>
-            <h3>Speaker and Storyteller</h3>
-            <p>Delivered a TEDxLewis University talk and use public speaking to explain complex experiences with clarity and confidence.</p>
-          </article>
-
-          <article class="highlight-card reveal">
-            <strong>UIC</strong>
-            <h3>3rd Place, Capture the Flame CTF</h3>
-            <p>Competed in practical cybersecurity challenges across forensics, OSINT, analysis, and security problem-solving.</p>
-          </article>
-
-          <article class="highlight-card reveal">
-            <strong>Google</strong>
+          <article class="proof-card">
             <h3>Google Search Priority User Program</h3>
-            <p>Evaluating emerging AI-powered Search experiences and providing structured feedback on usability, relevance, and product quality.</p>
+            <p>Part of a feedback community focused on Search experiences, product feedback, AI-assisted discovery, and user behavior.</p>
           </article>
 
-          <article class="highlight-card reveal">
-            <strong>GWC</strong>
+          <article class="proof-card">
             <h3>Girls Who Code President</h3>
-            <p>Organizing coding workshops, security and networking sessions, speaker-led events, and weekly co-working hours.</p>
+            <p>Led community-building, coding, security, and tech-learning efforts to create more beginner-friendly spaces.</p>
           </article>
         </div>
       </div>
     </section>
 
-<section id="contact">
+    <section id="human" class="human-section">
       <div class="page-shell">
-        <div class="contact-panel reveal">
+        <div class="section-head">
+          <div class="section-kicker">Beyond the Resume</div>
+          <h2 class="section-title">The human side matters too.</h2>
+          <p class="section-copy">
+            I’m also a storyteller, speaker, and international student documenting what it means to build a career before you feel fully ready.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="quote-card">
+            <p>“You can be in progress and still be visible.”</p>
+            <div class="chip-list">
+              <span class="chip">Getting Hired in Public</span>
+              <span class="chip">AI Literacy</span>
+              <span class="chip">International Student Life</span>
+              <span class="chip">Brave Attempts</span>
+            </div>
+          </div>
+
+          <div class="content-card">
+            <ul class="soft-list">
+              <li>I write about showing up scared, networking as an international student, and learning how to enter rooms before confidence fully arrives.</li>
+              <li>I care about using AI without outsourcing your brain: AI should help people think better, not stop thinking completely.</li>
+              <li>I’m building in public through projects, job applications, technical learning, speaking opportunities, and honest reflections from the messy middle.</li>
+              <li>My goal is to make technical learning feel more human, more useful, and less lonely for beginners figuring it out too.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="page-shell">
+        <div class="contact-panel">
           <div class="section-kicker">Contact</div>
-          <h2>Let’s connect the technical dots.</h2>
-          <p>I am open to early-career network, IT support, NOC, SOC Tier 1, and junior cybersecurity opportunities where troubleshooting, documentation, monitoring, communication, and AI-assisted workflows matter.</p>
+          <h2>Let’s connect.</h2>
+          <p>
+            I’m open to early-career roles in IT support, technical support, IT operations,
+            SOC/NOC, IAM support, and entry-level cybersecurity, especially in the Greater Chicago Area.
+            I’m also open to speaking, writing, and community opportunities around cybersecurity,
+            AI literacy, and international student experiences.
+          </p>
+
           <div class="actions" style="justify-content:center;">
             <a class="btn btn-primary" href="mailto:aaileenuni@gmail.com">Email Me</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/aaileensyed" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn btn-secondary" href="Aaileen_Sarwar_Syed_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <a class="btn btn-secondary" href="https://github.com/aaileenssyed" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-secondary" href="Aaileen_Sarwar_Syed_Resume.pdf" target="_blank" rel="noopener">Resume</a>
           </div>
         </div>
       </div>
     </section>
-</main>
+  </main>
 
   <footer>
-    <div class="page-shell">© <span id="year"></span> Aaileen Sarwar Syed. Built for secure systems, smart workflows, and clear technical storytelling.</div>
+    <div class="page-shell">
+      © 2026 Aaileen Sarwar Syed. Built for clear technical work, useful courage, and brave attempts.
+    </div>
   </footer>
-
-  <div class="modal-backdrop" id="readmeModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal">
-      <div class="modal-header">
-        <h3 id="modalTitle">Project README</h3>
-        <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
-      </div>
-      <div class="modal-body">
-        <div class="readme-content" id="modalBody"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-backdrop" id="browserModal" role="dialog" aria-modal="true" aria-labelledby="browserTitle">
-    <div class="modal browser-modal">
-      <div class="browser-bar">
-        <div class="browser-dots" aria-hidden="true">
-          <span class="browser-dot"></span>
-          <span class="browser-dot"></span>
-          <span class="browser-dot"></span>
-        </div>
-        <div class="browser-address" id="browserAddress">https://example.com</div>
-        <button class="modal-close" id="browserClose" aria-label="Close preview">×</button>
-      </div>
-      <div class="browser-frame-wrap">
-        <iframe id="browserFrame" title="Project live preview" src="about:blank"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const readmes = {
-      networklab: {
-  title: "Network Traffic Analysis: DNS, TCP Handshake & HTTPS Flow",
-  html: `
-    <h4>Overview</h4>
-    <p>
-      This networking lab demonstrates how a browser communicates
-      with a website through DNS resolution, TCP connection setup,
-      and HTTPS encryption.
-    </p>
-
-    <h4>Tools Used</h4>
-    <ul>
-      <li>Wireshark</li>
-      <li>Windows Command Prompt</li>
-      <li>nslookup</li>
-      <li>ping</li>
-      <li>Web Browser</li>
-    </ul>
-
-    <h4>Lab Activities</h4>
-    <ul>
-      <li>Reviewed local IP configuration, DNS server, and default gateway.</li>
-      <li>Resolved a website's IP address using nslookup.</li>
-      <li>Captured DNS query and response packets.</li>
-      <li>Captured the TCP three-way handshake.</li>
-      <li>Observed TLS/HTTPS communication over port 443.</li>
-      <li>Intentionally misconfigured DNS settings to simulate a failure.</li>
-      <li>Verified connectivity using ping and DNS troubleshooting techniques.</li>
-    </ul>
-
-    <h4>Key Finding</h4>
-    <p>
-      If direct IP connectivity works but domain names cannot be
-      resolved, DNS is often the root cause of the problem.
-    </p>
-
-    <h4>Skills Demonstrated</h4>
-    <p>
-      Network troubleshooting, packet analysis, DNS resolution,
-      TCP/IP fundamentals, HTTPS/TLS analysis, Wireshark usage,
-      and root-cause investigation.
-    </p>
-
-    <h4>Repository</h4>
-    <p>
-      GitHub:
-      https://github.com/aaileenssyed/network-traffic-analysis-lab
-    </p>
-  `
-},
-      auditready: {
-        title: "AuditReady AI",
-        html: `
-          <h4>Overview</h4>
-          <p>AuditReady AI is a compliance readiness project I built to help map security requirements, organize audit documentation, and support repeatable GRC workflows.</p>
-          <h4>Problem</h4>
-          <p>Small teams often struggle to translate security requirements into clear evidence, ownership, and audit-ready documentation.</p>
-          <h4>What It Demonstrates</h4>
-          <ul>
-            <li>Security documentation structure</li>
-            <li>Requirement-to-evidence mapping</li>
-            <li>AI-assisted workflow thinking</li>
-            <li>Compliance readiness and audit preparation</li>
-          </ul>
-          <h4>Status</h4>
-          <p>Case study ready. Add the hosted URL, screenshots, repository link, and full implementation notes when finalized.</p>
-        `
-      },
-      firewall: {
-        title: "AI-Assisted Firewall Rule and Network Security Policy Generator",
-        html: `
-          <h4>Overview</h4>
-          <p>This project converts plain-English server and network requirements into Linux <code>iptables</code> firewall rules using a default-deny security model.</p>
-          <h4>Key Features</h4>
-          <ul>
-            <li>Generates explicit allow rules for SSH, HTTP, HTTPS, and ICMP.</li>
-            <li>Explains risk level, business purpose, and least-privilege reasoning.</li>
-            <li>Flags risky configurations such as broad SSH exposure.</li>
-          </ul>
-          <h4>Skills Shown</h4>
-          <p>Linux security, firewall logic, least privilege, AI-assisted explanation, technical documentation, and network security policy translation.</p>
-        `
-      },
-      authentify: {
-        title: "Authentify AI — Deepfake Detection",
-        html: `
-          <h4>Overview</h4>
-          <p>Authentify AI is a deepfake detection project using a YOLOv5/CNN approach with long-range attention for manipulated image detection.</p>
-          <h4>What It Demonstrates</h4>
-          <ul>
-            <li>AI-security research interest</li>
-            <li>Computer vision model development</li>
-            <li>Dataset experimentation and model evaluation</li>
-            <li>Digital trust and authenticity use case</li>
-          </ul>
-          <h4>Status</h4>
-          <p>Add final README, screenshots, architecture notes, dataset explanation, and evaluation summary when repository is ready.</p>
-        `
-      },
-      blockchain: {
-        title: "Blockchain Technique for Decentralized Cloud Environments",
-        html: `
-          <h4>Overview</h4>
-          <p>This project explores decentralized file storage using Ethereum smart contracts, SHA-256 hashing, and IPFS integration.</p>
-          <h4>Security Focus</h4>
-          <ul>
-            <li>File integrity through hashing</li>
-            <li>Decentralized storage concepts</li>
-            <li>Cloud storage reliability</li>
-            <li>Blockchain-backed verification logic</li>
-          </ul>
-          <h4>Status</h4>
-          <p>Add architecture diagram, repository link, demo screenshots, and final implementation notes when available.</p>
-        `
-      }
-    };
-const mainContent = document.querySelector("main");
-const aboutSection = document.getElementById("about");
-const experienceSection = document.getElementById("experience");
-const certificationsSection = document.getElementById("certifications");
-const skillsSection = document.getElementById("skills");
-const projectsSection = document.getElementById("projects");
-const labsSection = document.getElementById("labs");
-const highlightsSection = document.getElementById("highlights");
-const contactSection = document.getElementById("contact");
-
-[
-  experienceSection,
-  certificationsSection,
-  skillsSection,
-  projectsSection,
-  labsSection,
-  highlightsSection,
-  aboutSection,
-  contactSection
-].forEach((section) => {
-  if (mainContent && section) {
-    mainContent.appendChild(section);
-  }
-});
-    const themeToggle = document.getElementById("themeToggle");
-    const themeLabel = document.getElementById("themeLabel");
-    const savedTheme = localStorage.getItem("aaileen-theme");
-
-    if (savedTheme === "light") {
-      document.body.classList.add("light");
-      themeLabel.textContent = "Dark";
-    }
-
-    themeToggle.addEventListener("click", () => {
-      document.body.classList.toggle("light");
-      const isLight = document.body.classList.contains("light");
-      themeLabel.textContent = isLight ? "Dark" : "Light";
-      localStorage.setItem("aaileen-theme", isLight ? "light" : "dark");
-    });
-
-    const readmeModal = document.getElementById("readmeModal");
-    const modalTitle = document.getElementById("modalTitle");
-    const modalBody = document.getElementById("modalBody");
-    const modalClose = document.getElementById("modalClose");
-
-    document.querySelectorAll("[data-project]").forEach((button) => {
-      button.addEventListener("click", () => {
-        const project = readmes[button.dataset.project];
-        modalTitle.textContent = project.title;
-        modalBody.innerHTML = project.html;
-        readmeModal.classList.add("active");
-        document.body.style.overflow = "hidden";
-      });
-    });
-
-    const browserModal = document.getElementById("browserModal");
-    const browserFrame = document.getElementById("browserFrame");
-    const browserAddress = document.getElementById("browserAddress");
-    const browserClose = document.getElementById("browserClose");
-
-    document.querySelectorAll("[data-url]").forEach((button) => {
-      button.addEventListener("click", () => {
-        const url = button.dataset.url;
-        const title = button.dataset.title || "Live Preview";
-        browserFrame.title = title;
-        browserFrame.src = url;
-        browserAddress.textContent = `${title} — ${url}`;
-        browserModal.classList.add("active");
-        document.body.style.overflow = "hidden";
-      });
-    });
-
-    function closeReadmeModal() {
-      readmeModal.classList.remove("active");
-      document.body.style.overflow = "";
-    }
-
-    function closeBrowserModal() {
-      browserModal.classList.remove("active");
-      browserFrame.src = "about:blank";
-      document.body.style.overflow = "";
-    }
-
-    modalClose.addEventListener("click", closeReadmeModal);
-    browserClose.addEventListener("click", closeBrowserModal);
-
-    readmeModal.addEventListener("click", (event) => {
-      if (event.target === readmeModal) closeReadmeModal();
-    });
-
-    browserModal.addEventListener("click", (event) => {
-      if (event.target === browserModal) closeBrowserModal();
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        closeReadmeModal();
-        closeBrowserModal();
-      }
-    });
-
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
