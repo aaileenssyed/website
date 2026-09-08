@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Aaileen Sarwar Syed | IT Support, Cybersecurity & AI Literacy</title>
-
+  <title>Aaileen Sarwar Syed | IT Support &amp; Security Operations</title>
   <meta
     name="description"
-    content="Portfolio of Aaileen Sarwar Syed, a cybersecurity graduate in Chicago building toward IT support, technical support, SOC/NOC, IAM, entry-level cybersecurity, AI literacy, documentation, and public communication."
+    content="Aaileen Sarwar Syed, IT support analyst in Chicago. Three years across a managed services provider and a 100+ user organization. M.S. Cybersecurity. Open to IT support, service desk, and security operations roles."
   />
-
   <style>
     :root {
       --bg: #fffaf7;
@@ -29,17 +26,8 @@
       --radius-lg: 18px;
       --max: 1120px;
     }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background:
@@ -49,548 +37,144 @@
       color: var(--text);
       line-height: 1.65;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .page-shell {
-      width: min(var(--max), calc(100% - 40px));
-      margin: 0 auto;
-    }
-
+    a { color: inherit; text-decoration: none; }
+    .page-shell { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
     .nav {
-      position: sticky;
-      top: 0;
-      z-index: 50;
+      position: sticky; top: 0; z-index: 50;
       backdrop-filter: blur(18px);
       background: rgba(255, 250, 247, 0.84);
       border-bottom: 1px solid var(--line);
     }
-
     .nav-inner {
-      width: min(var(--max), calc(100% - 40px));
-      margin: 0 auto;
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
+      width: min(var(--max), calc(100% - 40px)); margin: 0 auto;
+      min-height: 72px; display: flex; align-items: center;
+      justify-content: space-between; gap: 24px;
     }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 850;
-      letter-spacing: -0.03em;
-      white-space: nowrap;
-    }
-
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 850; letter-spacing: -0.03em; white-space: nowrap; }
     .brand-mark {
-      width: 40px;
-      height: 40px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, #f4a7c5, #c8b6ff);
-      color: #20131d;
-      font-weight: 950;
-      box-shadow: 0 12px 28px rgba(217, 79, 134, 0.18);
+      width: 40px; height: 40px; border-radius: 14px; display: grid; place-items: center;
+      background: linear-gradient(135deg, #f4a7c5, #c8b6ff); color: #20131d;
+      font-weight: 950; box-shadow: 0 12px 28px rgba(217, 79, 134, 0.18);
     }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      color: var(--muted);
-      font-size: 0.92rem;
-      font-weight: 700;
-    }
-
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-
-    section {
-      padding: 84px 0;
-    }
-
-    .hero {
-      padding: 92px 0 78px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 52px;
-      align-items: center;
-    }
-
+    .nav-links { display: flex; align-items: center; gap: 20px; color: var(--muted); font-size: 0.92rem; font-weight: 700; }
+    .nav-links a:hover { color: var(--accent); }
+    section { padding: 84px 0; }
+    .hero { padding: 92px 0 78px; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 52px; align-items: center; }
     .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      padding: 9px 14px;
-      border: 1px solid rgba(217, 79, 134, 0.22);
-      border-radius: 999px;
-      color: var(--accent);
-      background: rgba(217, 79, 134, 0.07);
-      font-weight: 850;
-      font-size: 0.86rem;
-      margin-bottom: 24px;
+      display: inline-flex; align-items: center; gap: 9px; padding: 9px 14px;
+      border: 1px solid rgba(217, 79, 134, 0.22); border-radius: 999px;
+      color: var(--accent); background: rgba(217, 79, 134, 0.07);
+      font-weight: 850; font-size: 0.86rem; margin-bottom: 24px;
     }
-
-    .pulse {
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: var(--accent);
-      box-shadow: 0 0 0 7px rgba(217, 79, 134, 0.12);
-    }
-
-    h1 {
-      font-size: clamp(3.4rem, 8vw, 6.8rem);
-      line-height: 0.9;
-      letter-spacing: -0.085em;
-      margin-bottom: 26px;
-      max-width: 820px;
-    }
-
+    .pulse { width: 8px; height: 8px; border-radius: 999px; background: var(--accent); box-shadow: 0 0 0 7px rgba(217, 79, 134, 0.12); }
+    h1 { font-size: clamp(3.4rem, 8vw, 6.8rem); line-height: 0.9; letter-spacing: -0.085em; margin-bottom: 26px; max-width: 820px; }
     .hero-title-accent {
       color: transparent;
       background: linear-gradient(135deg, var(--text) 10%, var(--accent) 45%, var(--accent-2) 95%);
-      -webkit-background-clip: text;
-      background-clip: text;
+      -webkit-background-clip: text; background-clip: text;
     }
-
-    .tagline {
-      font-size: clamp(1.28rem, 2vw, 1.7rem);
-      line-height: 1.35;
-      letter-spacing: -0.035em;
-      margin-bottom: 20px;
-      max-width: 780px;
-    }
-
-    .hero-copy {
-      color: var(--muted);
-      font-size: 1.04rem;
-      max-width: 740px;
-      margin-bottom: 32px;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-    }
-
+    .tagline { font-size: clamp(1.28rem, 2vw, 1.7rem); line-height: 1.35; letter-spacing: -0.035em; margin-bottom: 20px; max-width: 780px; }
+    .hero-copy { color: var(--muted); font-size: 1.04rem; max-width: 740px; margin-bottom: 32px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 0 20px;
-      border-radius: 999px;
-      font-weight: 850;
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0 20px; border-radius: 999px; font-weight: 850;
       border: 1px solid transparent;
       transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
     }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      color: #ffffff;
-      background: var(--accent);
-      box-shadow: 0 18px 40px rgba(217, 79, 134, 0.22);
-    }
-
-    .btn-secondary {
-      color: var(--text);
-      border-color: var(--line);
-      background: rgba(255, 255, 255, 0.72);
-    }
-
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { color: #ffffff; background: var(--accent); box-shadow: 0 18px 40px rgba(217, 79, 134, 0.22); }
+    .btn-secondary { color: var(--text); border-color: var(--line); background: rgba(255, 255, 255, 0.72); }
     .hero-card {
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.78);
-      box-shadow: var(--shadow);
-      border-radius: var(--radius-xl);
-      padding: 28px;
+      border: 1px solid var(--line); background: rgba(255, 255, 255, 0.78);
+      box-shadow: var(--shadow); border-radius: var(--radius-xl); padding: 28px;
     }
-
-    .mini-label {
-      color: var(--muted-2);
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.72rem;
-      font-weight: 950;
-      margin-bottom: 8px;
+    .mini-label { color: var(--muted-2); text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.72rem; font-weight: 950; margin-bottom: 8px; }
+    .hero-card h2 { font-size: 1.55rem; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 22px; }
+    .metric-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 22px; }
+    .metric { padding: 18px; border: 1px solid var(--line); background: var(--panel-soft); border-radius: 18px; }
+    .metric strong { display: block; font-size: 1.45rem; letter-spacing: -0.045em; line-height: 1; margin-bottom: 7px; }
+    .metric span { color: var(--muted); display: block; font-size: 0.87rem; }
+    .chip-list, .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip, .tag {
+      border: 1px solid var(--line); background: rgba(255, 255, 255, 0.72); color: var(--text);
+      border-radius: 999px; padding: 7px 10px; font-weight: 750; font-size: 0.82rem;
     }
-
-    .hero-card h2 {
-      font-size: 1.55rem;
-      letter-spacing: -0.04em;
-      line-height: 1.1;
-      margin-bottom: 22px;
-    }
-
-    .metric-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-bottom: 22px;
-    }
-
-    .metric {
-      padding: 18px;
-      border: 1px solid var(--line);
-      background: var(--panel-soft);
-      border-radius: 18px;
-    }
-
-    .metric strong {
-      display: block;
-      font-size: 1.45rem;
-      letter-spacing: -0.045em;
-      line-height: 1;
-      margin-bottom: 7px;
-    }
-
-    .metric span {
-      color: var(--muted);
-      display: block;
-      font-size: 0.87rem;
-    }
-
-    .chip-list,
-    .skill-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .chip,
-    .tag {
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.72);
-      color: var(--text);
-      border-radius: 999px;
-      padding: 7px 10px;
-      font-weight: 750;
-      font-size: 0.82rem;
-    }
-
-    .section-head {
-      max-width: 790px;
-      margin-bottom: 34px;
-    }
-
-    .section-kicker {
-      color: var(--accent);
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-weight: 950;
-      margin-bottom: 10px;
-    }
-
-    .section-title {
-      font-size: clamp(2.2rem, 4vw, 3.8rem);
-      line-height: 1;
-      letter-spacing: -0.07em;
-      margin-bottom: 16px;
-    }
-
-    .section-copy {
-      color: var(--muted);
-      font-size: 1.03rem;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 22px;
-    }
-
-    .quote-card,
-    .content-card,
-    .project-card,
-    .experience-card,
-    .proof-card,
-    .contact-panel {
-      border: 1px solid var(--line);
-      border-radius: var(--radius-xl);
-      background: rgba(255, 255, 255, 0.78);
-      padding: 28px;
+    .section-head { max-width: 790px; margin-bottom: 34px; }
+    .section-kicker { color: var(--accent); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.18em; font-weight: 950; margin-bottom: 10px; }
+    .section-title { font-size: clamp(2.2rem, 4vw, 3.8rem); line-height: 1; letter-spacing: -0.07em; margin-bottom: 16px; }
+    .section-copy { color: var(--muted); font-size: 1.03rem; }
+    .about-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 22px; }
+    .quote-card, .content-card, .project-card, .experience-card, .proof-card, .contact-panel {
+      border: 1px solid var(--line); border-radius: var(--radius-xl);
+      background: rgba(255, 255, 255, 0.78); padding: 28px;
       box-shadow: 0 18px 50px rgba(76, 37, 55, 0.08);
     }
-
-    .quote-card {
-      background:
-        radial-gradient(circle at top right, rgba(217, 79, 134, 0.14), transparent 20rem),
-        #ffffff;
-    }
-
-    .quote-card p {
-      font-size: 1.35rem;
-      line-height: 1.36;
-      letter-spacing: -0.04em;
-      margin-bottom: 22px;
-    }
-
-    .soft-list {
-      display: grid;
-      gap: 14px;
-      color: var(--muted);
-    }
-
-    .soft-list li {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 22px 1fr;
-      gap: 12px;
-    }
-
+    .quote-card { background: radial-gradient(circle at top right, rgba(217, 79, 134, 0.14), transparent 20rem), #ffffff; }
+    .quote-card p { font-size: 1.35rem; line-height: 1.36; letter-spacing: -0.04em; margin-bottom: 22px; }
+    .soft-list { display: grid; gap: 14px; color: var(--muted); }
+    .soft-list li { list-style: none; display: grid; grid-template-columns: 22px 1fr; gap: 12px; }
     .soft-list li::before {
-      content: "";
-      width: 9px;
-      height: 9px;
-      margin-top: 8px;
-      border-radius: 999px;
+      content: ""; width: 9px; height: 9px; margin-top: 8px; border-radius: 999px;
       background: linear-gradient(135deg, var(--accent), var(--accent-2));
       box-shadow: 0 0 0 7px rgba(217, 79, 134, 0.09);
     }
-
-    .focus-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
+    .focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .focus-card { border: 1px solid var(--line); border-radius: var(--radius-lg); background: rgba(255, 255, 255, 0.72); padding: 22px; }
+    .focus-card h3 { font-size: 1.1rem; letter-spacing: -0.035em; margin-bottom: 8px; }
+    .focus-card p { color: var(--muted); font-size: 0.94rem; }
+    .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .project-card { min-height: 320px; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s ease, border-color 0.2s ease; }
+    .project-card:hover { transform: translateY(-5px); border-color: rgba(217, 79, 134, 0.28); }
+    .project-category { color: var(--accent); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 950; margin-bottom: 12px; }
+    .project-card h3 { font-size: 1.45rem; line-height: 1.1; letter-spacing: -0.045em; margin-bottom: 14px; }
+    .project-card p { color: var(--muted); margin-bottom: 18px; }
+    .project-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .experience-list { display: grid; gap: 16px; }
+    .experience-card { display: grid; grid-template-columns: 280px 1fr; gap: 28px; }
+    .experience-meta { color: var(--muted); }
+    .experience-meta strong { display: block; color: var(--text); font-size: 1.1rem; letter-spacing: -0.035em; margin-bottom: 6px; }
+    .experience-body h3 { font-size: 1.26rem; letter-spacing: -0.04em; margin-bottom: 8px; }
+    .experience-body p { color: var(--muted); margin-bottom: 14px; }
+    .result-line {
+      display: inline-block; margin-bottom: 14px; padding: 8px 14px;
+      border-radius: 999px; background: var(--accent-soft);
+      color: #8a1f4d; font-weight: 850; font-size: 0.9rem;
     }
-
-    .focus-card {
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      background: rgba(255, 255, 255, 0.72);
-      padding: 22px;
-    }
-
-    .focus-card h3 {
-      font-size: 1.1rem;
-      letter-spacing: -0.035em;
-      margin-bottom: 8px;
-    }
-
-    .focus-card p {
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .project-card {
-      min-height: 320px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(217, 79, 134, 0.28);
-    }
-
-    .project-category {
-      color: var(--accent);
-      font-size: 0.76rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      font-weight: 950;
-      margin-bottom: 12px;
-    }
-
-    .project-card h3 {
-      font-size: 1.45rem;
-      line-height: 1.1;
-      letter-spacing: -0.045em;
-      margin-bottom: 14px;
-    }
-
-    .project-card p {
-      color: var(--muted);
-      margin-bottom: 18px;
-    }
-
-    .project-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .experience-list {
-      display: grid;
-      gap: 16px;
-    }
-
-    .experience-card {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 28px;
-    }
-
-    .experience-meta {
-      color: var(--muted);
-    }
-
-    .experience-meta strong {
-      display: block;
-      color: var(--text);
-      font-size: 1.1rem;
-      letter-spacing: -0.035em;
-      margin-bottom: 6px;
-    }
-
-    .experience-body h3 {
-      font-size: 1.26rem;
-      letter-spacing: -0.04em;
-      margin-bottom: 8px;
-    }
-
-    .experience-body p {
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
-
-    .proof-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .proof-card h3 {
-      font-size: 1.12rem;
-      letter-spacing: -0.035em;
-      margin-bottom: 8px;
-    }
-
-    .proof-card p {
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
+    .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .proof-card h3 { font-size: 1.12rem; letter-spacing: -0.035em; margin-bottom: 8px; }
+    .proof-card p { color: var(--muted); font-size: 0.94rem; }
     .human-section {
-      background:
-        radial-gradient(circle at top left, rgba(217, 79, 134, 0.12), transparent 22rem),
-        rgba(255, 255, 255, 0.38);
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
+      background: radial-gradient(circle at top left, rgba(217, 79, 134, 0.12), transparent 22rem), rgba(255, 255, 255, 0.38);
+      border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
     }
-
-    .initiative-card {
-      min-height: auto;
-      display: block;
-    }
-
-    .initiative-card h3 {
-      margin-top: 24px;
-    }
-
-    .initiative-card h3:first-child {
-      margin-top: 0;
-    }
-
+    .initiative-card { min-height: auto; display: block; }
+    .initiative-card h3 { margin-top: 24px; }
+    .initiative-card h3:first-child { margin-top: 0; }
     .contact-panel {
-      text-align: center;
-      padding: clamp(32px, 6vw, 64px);
-      background:
-        radial-gradient(circle at 12% 0%, rgba(217, 79, 134, 0.14), transparent 24rem),
-        #ffffff;
+      text-align: center; padding: clamp(32px, 6vw, 64px);
+      background: radial-gradient(circle at 12% 0%, rgba(217, 79, 134, 0.14), transparent 24rem), #ffffff;
     }
-
-    .contact-panel h2 {
-      font-size: clamp(2.2rem, 5vw, 4.3rem);
-      line-height: 0.95;
-      letter-spacing: -0.075em;
-      margin-bottom: 16px;
-    }
-
-    .contact-panel p {
-      color: var(--muted);
-      max-width: 760px;
-      margin: 0 auto 28px;
-      font-size: 1.05rem;
-    }
-
-    footer {
-      padding: 32px 0 54px;
-      color: var(--muted-2);
-      text-align: center;
-      font-size: 0.92rem;
-    }
-
+    .contact-panel h2 { font-size: clamp(2.2rem, 5vw, 4.3rem); line-height: 0.95; letter-spacing: -0.075em; margin-bottom: 16px; }
+    .contact-panel p { color: var(--muted); max-width: 760px; margin: 0 auto 28px; font-size: 1.05rem; }
+    footer { padding: 32px 0 54px; color: var(--muted-2); text-align: center; font-size: 0.92rem; }
     @media (max-width: 980px) {
-      .hero-grid,
-      .about-grid,
-      .experience-card {
-        grid-template-columns: 1fr;
-      }
-
-      .focus-grid,
-      .proof-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      .hero-grid, .about-grid, .experience-card { grid-template-columns: 1fr; }
+      .focus-grid, .proof-grid { grid-template-columns: repeat(2, 1fr); }
     }
-
     @media (max-width: 720px) {
-      .page-shell,
-      .nav-inner {
-        width: min(100% - 28px, var(--max));
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero {
-        padding-top: 60px;
-      }
-
-      h1 {
-        font-size: clamp(3.1rem, 17vw, 5rem);
-      }
-
-      .metric-grid,
-      .projects-grid,
-      .focus-grid,
-      .proof-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .actions {
-        align-items: stretch;
-      }
-
-      section {
-        padding: 62px 0;
-      }
+      .page-shell, .nav-inner { width: min(100% - 28px, var(--max)); }
+      .nav-links { display: none; }
+      .hero { padding-top: 60px; }
+      h1 { font-size: clamp(3.1rem, 17vw, 5rem); }
+      .metric-grid, .projects-grid, .focus-grid, .proof-grid { grid-template-columns: 1fr; }
+      .btn { width: 100%; }
+      .actions { align-items: stretch; }
+      section { padding: 62px 0; }
     }
   </style>
 </head>
-
 <body>
   <header class="nav">
     <div class="nav-inner">
@@ -598,11 +182,10 @@
         <span class="brand-mark">AS</span>
         <span>Aaileen Sarwar Syed</span>
       </a>
-
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#proof">Certs</a>
         <a href="#human">Human Side</a>
         <a href="#iqra-initiative">Community AI</a>
@@ -610,25 +193,20 @@
       </nav>
     </div>
   </header>
-
   <main id="top">
     <section class="hero">
       <div class="page-shell hero-grid">
         <div>
-          <div class="eyebrow"><span class="pulse"></span> Technical support • Cybersecurity • AI literacy • Storytelling</div>
-
+          <div class="eyebrow"><span class="pulse"></span> IT support • Service desk • Security operations</div>
           <h1>Aaileen <span class="hero-title-accent">Sarwar Syed</span></h1>
-
           <p class="tagline">
             I turn confusing technical problems into clear notes, useful documentation, and calmer next steps.
           </p>
-
           <p class="hero-copy">
-            I’m a cybersecurity graduate in Chicago building toward IT support, technical support,
-            security operations, IAM, SOC/NOC, and AI-literate technical workflows. This site is part
-            portfolio, part proof of work, and part public archive of becoming.
+            Three years of hands-on IT support across a managed services provider, a 100+ user
+            organization where I was the only technical resource, and a university. M.S. in
+            Cybersecurity. I fix the ticket, then work out why it keeps coming back.
           </p>
-
           <div class="actions">
             <a class="btn btn-primary" href="Aaileen_Sarwar_Syed_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/aaileensyed" target="_blank" rel="noopener">LinkedIn</a>
@@ -636,40 +214,33 @@
             <a class="btn btn-secondary" href="mailto:aaileenuni@gmail.com">Email Me</a>
           </div>
         </div>
-
         <aside class="hero-card" aria-label="Portfolio focus summary">
-          <div class="mini-label">Currently building toward</div>
-          <h2>IT support, technical support, SOC/NOC, IAM, and entry-level cybersecurity roles.</h2>
-
+          <div class="mini-label">Open to</div>
+          <h2>IT support, service desk, and security operations roles in Chicago or remote.</h2>
           <div class="metric-grid">
             <div class="metric">
-              <strong>ISC2 CC</strong>
-              <span>Certified in Cybersecurity</span>
+              <strong>80%</strong>
+              <span>drop in repeat support requests after I rebuilt the training and documentation</span>
             </div>
-
+            <div class="metric">
+              <strong>100+</strong>
+              <span>users supported as the only technical resource, with no escalation path</span>
+            </div>
             <div class="metric">
               <strong>30+</strong>
-              <span>weekly support tickets handled during IT internship</span>
+              <span>tickets a week across 15+ client environments at an MSP</span>
             </div>
-
-            <div class="metric">
-              <strong>15+</strong>
-              <span>client environments monitored with PRTG, Sophos, and Webroot</span>
-            </div>
-
             <div class="metric">
               <strong>3.9</strong>
-              <span>M.S. Cybersecurity GPA at Lewis University</span>
+              <span>GPA, M.S. Cybersecurity, Lewis University</span>
             </div>
           </div>
-
           <div class="chip-list">
-            <span class="chip">Technical Support Engineer</span>
             <span class="chip">IT Support Specialist</span>
-            <span class="chip">NOC Analyst</span>
+            <span class="chip">Service Desk Analyst</span>
+            <span class="chip">IT Analyst</span>
             <span class="chip">SOC Analyst I</span>
-            <span class="chip">IAM Support</span>
-            <span class="chip">Chicago</span>
+            <span class="chip">Available immediately</span>
           </div>
         </aside>
       </div>
@@ -681,171 +252,28 @@
           <div class="section-kicker">About</div>
           <h2 class="section-title">Technical enough to show proof. Human enough to feel like me.</h2>
           <p class="section-copy">
-            I’m building my career at the intersection of technical troubleshooting, cybersecurity,
-            documentation, AI literacy, and public communication.
+            I work where technical troubleshooting meets documentation and clear communication.
           </p>
         </div>
-
         <div class="about-grid">
           <div class="quote-card">
             <p>“I like making confusing technical things feel less scary, more useful, and easier to act on.”</p>
-
             <div class="chip-list">
               <span class="chip">Chicago, IL</span>
               <span class="chip">M.S. Cybersecurity</span>
               <span class="chip">ISC2 CC</span>
               <span class="chip">TEDx Speaker</span>
-              <span class="chip">Storyteller</span>
+              <span class="chip">3rd place, UIC CTF</span>
             </div>
           </div>
-
           <div class="content-card">
             <ul class="soft-list">
-              <li>I’m a cybersecurity M.S. graduate from Lewis University with a background in IT support, technical troubleshooting, documentation, user support, networking fundamentals, and security-focused labs.</li>
-              <li>My work sits somewhere between technical problem-solving and human communication: figuring out what broke, documenting what happened, explaining it clearly, and thinking about how better workflows can prevent the same problem next time.</li>
-              <li>I’m currently building toward roles in IT support, technical support, IT operations, SOC/NOC, IAM support, and entry-level cybersecurity.</li>
-              <li>Outside of the technical side, I care about storytelling, public speaking, international student experiences, AI literacy, and helping beginners feel less lost while they build their own paths.</li>
+              <li>Three years of hands-on IT support: 30+ tickets a week across 15+ client environments at a managed services provider, then two years as the only technical resource for a 100+ user organization, where the devices, accounts, network, vendors and documentation were all mine.</li>
+              <li>What I actually do is figure out what broke, document what happened, explain it in language the person can use, and then work out how to stop it happening again. That last part is where the 80% came from.</li>
+              <li>M.S. in Cybersecurity from Lewis University with a 3.9 GPA. In day-to-day support that mostly shows up as care with access and permissions, and knowing which alerts are noise.</li>
+              <li>I also speak publicly, including a TEDx talk this year and two security conferences in October. Explaining technical things to people who have no obligation to care is a good test of whether you actually understand them.</li>
             </ul>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="focus">
-      <div class="page-shell">
-        <div class="section-head">
-          <div class="section-kicker">Current Focus</div>
-          <h2 class="section-title">What I’m building right now.</h2>
-          <p class="section-copy">
-            I’m not just waiting for the next opportunity. I’m building the habits, projects, and proof that support the roles I’m applying for.
-          </p>
-        </div>
-
-        <div class="focus-grid">
-          <article class="focus-card">
-            <h3>Ticket-writing muscle memory</h3>
-            <p>Practicing how to document issues clearly with summaries, user impact, troubleshooting steps, escalation notes, and customer-facing updates.</p>
-          </article>
-
-          <article class="focus-card">
-            <h3>Support + security fundamentals</h3>
-            <p>Brushing up on Windows, Microsoft 365, networking, IAM, logs, troubleshooting, and incident response basics.</p>
-          </article>
-
-          <article class="focus-card">
-            <h3>Getting Hired in Public</h3>
-            <p>Documenting the job hunt as an international cybersecurity new grad in Chicago: applying, learning, building, networking, and showing up anyway.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="page-shell">
-        <div class="section-head">
-          <div class="section-kicker">Projects</div>
-          <h2 class="section-title">Proof of work, but make it useful.</h2>
-          <p class="section-copy">
-            These projects show how I connect IT support, cybersecurity, documentation, AI workflows, and hands-on technical learning.
-          </p>
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card">
-            <div>
-              <div class="project-category">IT Support / Cybersecurity / Documentation</div>
-              <h3>IT Support & Cybersecurity Playbook</h3>
-              <p>
-                A practical playbook documenting troubleshooting workflows, ticket-writing habits,
-                escalation notes, customer communication, and security-aware support practices.
-                Built to connect IT support work with IAM, SOC/NOC thinking, and entry-level cybersecurity workflows.
-              </p>
-
-              <div class="skill-tags">
-                <span class="tag">IT Support</span>
-                <span class="tag">Troubleshooting</span>
-                <span class="tag">Documentation</span>
-                <span class="tag">Ticketing</span>
-                <span class="tag">IAM</span>
-                <span class="tag">SOC/NOC</span>
-              </div>
-            </div>
-
-            <div class="project-actions">
-              <a class="btn btn-primary" href="https://github.com/aaileenssyed/its-playbook" target="_blank" rel="noopener">View GitHub</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div>
-              <div class="project-category">Networking / Wireshark / Troubleshooting</div>
-              <h3>Network Traffic Analysis Lab</h3>
-              <p>
-                A hands-on Wireshark lab analyzing DNS resolution, TCP connection setup,
-                HTTPS/TLS traffic, and DNS troubleshooting by intentionally breaking and validating DNS behavior.
-              </p>
-
-              <div class="skill-tags">
-                <span class="tag">Wireshark</span>
-                <span class="tag">DNS</span>
-                <span class="tag">TCP/IP</span>
-                <span class="tag">TLS</span>
-                <span class="tag">Troubleshooting</span>
-              </div>
-            </div>
-
-            <div class="project-actions">
-              <a class="btn btn-primary" href="https://github.com/aaileenssyed/network-traffic-analysis-lab" target="_blank" rel="noopener">View GitHub</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div>
-              <div class="project-category">Cybersecurity / GRC / AI</div>
-              <h3>AuditReady AI</h3>
-              <p>
-                A cybersecurity and GRC readiness tool that maps security requirements,
-                identifies control gaps, and generates structured remediation guidance.
-                Built to explore AI-assisted security documentation and readiness workflows.
-              </p>
-
-              <div class="skill-tags">
-                <span class="tag">GRC</span>
-                <span class="tag">NIST CSF</span>
-                <span class="tag">AI Workflows</span>
-                <span class="tag">Documentation</span>
-                <span class="tag">Cybersecurity</span>
-              </div>
-            </div>
-
-            <div class="project-actions">
-              <a class="btn btn-primary" href="https://auditready-ai-five.vercel.app/" target="_blank" rel="noopener">View Live</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div>
-              <div class="project-category">AI + Network Security</div>
-              <h3>AI-Assisted Firewall Rule Generator</h3>
-              <p>
-                An educational security tool that converts plain-English server requirements
-                into Linux iptables rules using a default-deny model.
-                Built to show where AI can support learning while human judgment still matters.
-              </p>
-
-              <div class="skill-tags">
-                <span class="tag">Firewall</span>
-                <span class="tag">iptables</span>
-                <span class="tag">Least Privilege</span>
-                <span class="tag">Linux</span>
-                <span class="tag">AI Security</span>
-              </div>
-            </div>
-
-            <div class="project-actions">
-              <a class="btn btn-primary" href="https://ai-firewall-rule-gen-zlw1.bolt.host" target="_blank" rel="noopener">View Live</a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -859,52 +287,84 @@
             My experience sits close to where technical issues meet people, process, and clear documentation.
           </p>
         </div>
-
         <div class="experience-list">
-          <article class="experience-card">
-            <div class="experience-meta">
-              <strong>IT Analyst Intern</strong>
-              <span>eFusion Solutions</span><br />
-              <span>Oct 2022 – Jan 2023</span>
-            </div>
-
-            <div class="experience-body">
-              <h3>Supporting network, endpoint, and client environments.</h3>
-              <p>
-                Resolved 30+ weekly support tickets involving Windows systems, applications,
-                remote access, VPN connectivity, endpoint security alerts, account administration,
-                remote desktop issues, and network troubleshooting.
-              </p>
-              <div class="skill-tags">
-                <span class="tag">Microsoft 365</span>
-                <span class="tag">Windows</span>
-                <span class="tag">VPN</span>
-                <span class="tag">PRTG</span>
-                <span class="tag">Sophos</span>
-                <span class="tag">Webroot</span>
-              </div>
-            </div>
-          </article>
-
           <article class="experience-card">
             <div class="experience-meta">
               <strong>Graduate Assistant</strong>
               <span>Lewis University</span><br />
               <span>Jan 2025 – May 2026</span>
             </div>
-
             <div class="experience-body">
-              <h3>Supporting operational systems, records, access guidance, and process troubleshooting.</h3>
+              <h3>Supporting programming, systems, records, and event technology.</h3>
               <p>
-                Supported student-facing academic and operational systems serving 200+ students each semester,
-                while creating documentation, reports, guides, newsletters, onboarding resources,
-                and troubleshooting support for non-technical users.
+                Supported programming serving 200+ students each semester, 30+ external partners,
+                and a team of 20+ staff and faculty. Set up and troubleshot event and presentation
+                technology on site, coordinated technical inventory sent out to partner schools
+                through the Office of Technology, and wrote the troubleshooting guides and
+                onboarding documentation adopted as the standard reference.
               </p>
               <div class="skill-tags">
                 <span class="tag">Documentation</span>
-                <span class="tag">Process Support</span>
-                <span class="tag">Reporting</span>
-                <span class="tag">Communication</span>
+                <span class="tag">AV &amp; Presentation Tech</span>
+                <span class="tag">Records &amp; Reporting</span>
+                <span class="tag">Stakeholder Support</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-meta">
+              <strong>IT and Operations Lead</strong>
+              <span>IQRA Arabic Academy (non-profit)</span><br />
+              <span>Jan 2023 – Dec 2024</span>
+            </div>
+            <div class="experience-body">
+              <h3>Sole technical resource for a 100+ user organization.</h3>
+              <span class="result-line">Repeat requests down 80% · Exam completion up 50% · Time lost to technical problems 30% → 10%</span>
+              <p>
+                Every device, account, printer, network issue and vendor conversation was mine, with
+                nobody to escalate to. About a year in I looked properly at my ticket history and
+                found most of what I was handling was not a set of distinct problems. It was a small
+                number of recurring causes arriving in different words, and I had been solving each
+                instance while the cause sat untouched. So I built four training workshops, recorded
+                eight sessions people could return to privately, and rewrote the documentation:
+                50+ records under a naming convention with version control.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">Windows</span>
+                <span class="tag">Active Directory</span>
+                <span class="tag">Microsoft 365</span>
+                <span class="tag">Google Workspace</span>
+                <span class="tag">Patching</span>
+                <span class="tag">Training</span>
+                <span class="tag">Documentation</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-meta">
+              <strong>IT Analyst Intern</strong>
+              <span>eFusion Solutions, managed services provider</span><br />
+              <span>Oct 2022 – Jan 2023</span>
+            </div>
+            <div class="experience-body">
+              <h3>Supporting network, endpoint, and client environments.</h3>
+              <p>
+                Resolved 30+ weekly support tickets across 15+ client environments covering Windows
+                systems, applications, remote access, VPN connectivity, endpoint security alerts,
+                account administration, and network troubleshooting. Configured Cisco switches,
+                deployed virtual servers in VMware, and triaged alerts in PRTG, Sophos and Webroot.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">Microsoft 365</span>
+                <span class="tag">Windows Server</span>
+                <span class="tag">VPN</span>
+                <span class="tag">PRTG</span>
+                <span class="tag">Sophos</span>
+                <span class="tag">Webroot</span>
+                <span class="tag">Cisco</span>
+                <span class="tag">VMware</span>
               </div>
             </div>
           </article>
@@ -915,20 +375,136 @@
               <span>Google Search Priority User Program</span><br />
               <span>Apr 2026 – Present</span>
             </div>
-
             <div class="experience-body">
               <h3>Evaluating AI-powered search experiences and product quality.</h3>
               <p>
                 Selected to provide structured feedback on Google Search experiences, usability,
-                user behavior, digital discovery, relevance, and emerging AI-assisted search features.
+                relevance, and emerging AI-assisted search features.
               </p>
               <div class="skill-tags">
                 <span class="tag">AI Search</span>
                 <span class="tag">Product Feedback</span>
                 <span class="tag">Usability</span>
-                <span class="tag">Digital Trust</span>
               </div>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="page-shell">
+        <div class="section-head">
+          <div class="section-kicker">Projects</div>
+          <h2 class="section-title">Proof of work, but make it useful.</h2>
+          <p class="section-copy">
+            Things I built because I wanted to understand them properly, not because anyone assigned them.
+          </p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div>
+              <div class="project-category">IT Support / Documentation</div>
+              <h3>IT Support &amp; Cybersecurity Playbook</h3>
+              <p>
+                A practical playbook documenting troubleshooting workflows, ticket-writing habits,
+                escalation notes, customer communication, and security-aware support practices.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">IT Support</span>
+                <span class="tag">Troubleshooting</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">Ticketing</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://github.com/aaileenssyed/its-playbook" target="_blank" rel="noopener">View GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-category">Networking / Wireshark</div>
+              <h3>Network Traffic Analysis Lab</h3>
+              <p>
+                A Wireshark lab analyzing DNS resolution, TCP connection setup and HTTPS/TLS traffic
+                by intentionally breaking DNS and validating the behaviour. I learned DNS properly by
+                breaking it at home first.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">Wireshark</span>
+                <span class="tag">DNS</span>
+                <span class="tag">TCP/IP</span>
+                <span class="tag">TLS</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://github.com/aaileenssyed/network-traffic-analysis-lab" target="_blank" rel="noopener">View GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-category">Cybersecurity / GRC</div>
+              <h3>AuditReady AI</h3>
+              <p>
+                A GRC readiness tool that maps security requirements against NIST CSF, identifies
+                control gaps, and generates structured remediation guidance tracked to closure.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">GRC</span>
+                <span class="tag">NIST CSF</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">Cybersecurity</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://auditready-ai-five.vercel.app/" target="_blank" rel="noopener">View Live</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-category">Network Security</div>
+              <h3>AI-Assisted Firewall Rule Generator</h3>
+              <p>
+                An educational tool that converts plain-English server requirements into Linux
+                iptables rules using a default-deny model. Built to show where AI can support
+                learning while human judgment still matters.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">Firewall</span>
+                <span class="tag">iptables</span>
+                <span class="tag">Least Privilege</span>
+                <span class="tag">Linux</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://ai-firewall-rule-gen-zlw1.bolt.host" target="_blank" rel="noopener">View Live</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="page-shell">
+        <div class="section-head">
+          <div class="section-kicker">How I Work</div>
+          <h2 class="section-title">Three habits I bring to a support desk.</h2>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <h3>Write it down properly</h3>
+            <p>Every ticket gets the issue, what I tried, and how it ended. An environment only one person understands is not supported, it is hostage.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Ask for a description, not a conclusion</h3>
+            <p>“It is broken” tells you nothing. “What is on the screen right now, word for word” tells you a great deal. Most of troubleshooting is the first question.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Watch the pattern, not just the ticket</h3>
+            <p>A queue that only closes tickets stays exactly as busy as it was. The one that notices what keeps returning gets quieter.</p>
           </article>
         </div>
       </div>
@@ -937,52 +513,41 @@
     <section id="proof">
       <div class="page-shell">
         <div class="section-head">
-          <div class="section-kicker">Proof & Certifications</div>
-          <h2 class="section-title">Small wins, useful proof.</h2>
-          <p class="section-copy">
-            A compact record of certifications, simulations, learning paths, competitions, and milestones that support my IT, cybersecurity, AI, and technical support journey.
-          </p>
+          <div class="section-kicker">Certifications &amp; Recognition</div>
+          <h2 class="section-title">Credentials and competitions.</h2>
         </div>
-
         <div class="proof-grid">
           <article class="proof-card">
             <h3>M.S. Cybersecurity</h3>
-            <p>Lewis University. GPA 3.9/4.0. Focused on cybersecurity, networking, risk, incident response, and practical labs.</p>
+            <p>Lewis University. GPA 3.9/4.0. Cybersecurity, networking, risk, incident response, and practical labs.</p>
           </article>
-
           <article class="proof-card">
             <h3>ISC2 Certified in Cybersecurity</h3>
-            <p>Issued July 2026. Security principles, access control, incident response, network security, and security operations.</p>
+            <p>Security principles, access control, incident response, network security, and security operations.</p>
           </article>
-
-          <article class="proof-card">
-            <h3>Deloitte Cyber Job Simulation</h3>
-            <p>Forage simulation focused on cybersecurity work scenarios, analysis, and practical security decision-making.</p>
-          </article>
-
           <article class="proof-card">
             <h3>Cisco Cyber Defense Analyst</h3>
             <p>Cyber defense, incident response, Splunk, monitoring, and security operations fundamentals.</p>
           </article>
-
           <article class="proof-card">
-            <h3>Google Cybersecurity Certificate</h3>
-            <p>Security foundations, risk management, networks, security concepts, and beginner cybersecurity workflows.</p>
+            <h3>3rd Place, Capture the Flame</h3>
+            <p>Cybersecurity competition at the University of Illinois Chicago. Also placed 31st with my team in the National Cyber League.</p>
           </article>
-
           <article class="proof-card">
-            <h3>Google AI / Claude 101</h3>
-            <p>AI literacy, practical AI workflows, prompt engineering, and using AI as a thinking and documentation support layer.</p>
+            <h3>TEDx Speaker</h3>
+            <p>TEDxLewisUniversity, 2026. Speaking at kcpCON and CornCon in October 2026.</p>
           </article>
-
           <article class="proof-card">
-            <h3>3rd Place CTF</h3>
-            <p>Capture the Flame cybersecurity competition at UIC, with hands-on security problem-solving challenges.</p>
+            <h3>Google Technical Support Fundamentals</h3>
+            <p>Plus the Google Cybersecurity Certificate and a Deloitte cyber job simulation through Forage.</p>
           </article>
-
           <article class="proof-card">
-            <h3>Currently Learning</h3>
-            <p>Google IT Support, CCNA fundamentals, Security+ concepts, Jira-style ticket logging, and support/security documentation practice.</p>
+            <h3>Microsoft SC-200</h3>
+            <p>Security Operations Analyst. Exam scheduled for October 2026.</p>
+          </article>
+          <article class="proof-card">
+            <h3>CompTIA A+</h3>
+            <p>In progress. Network+ and Security+ next.</p>
           </article>
         </div>
       </div>
@@ -994,27 +559,25 @@
           <div class="section-kicker">Beyond the Resume</div>
           <h2 class="section-title">The human side matters too.</h2>
           <p class="section-copy">
-            I’m also a storyteller, speaker, and international student documenting what it means to build a career before you feel fully ready.
+            I speak, I write, and I care about making technical learning less lonely for people starting out.
           </p>
         </div>
-
         <div class="about-grid">
           <div class="quote-card">
             <p>“You can be in progress and still be visible.”</p>
             <div class="chip-list">
-              <span class="chip">Getting Hired in Public</span>
+              <span class="chip">TEDx</span>
+              <span class="chip">Conference Speaker</span>
               <span class="chip">AI Literacy</span>
-              <span class="chip">International Student Life</span>
-              <span class="chip">Brave Attempts</span>
+              <span class="chip">Girls Who Code</span>
             </div>
           </div>
-
           <div class="content-card">
             <ul class="soft-list">
-              <li>I write about showing up scared, networking as an international student, and learning how to enter rooms before confidence fully arrives.</li>
-              <li>I care about using AI without outsourcing your brain: AI should help people think better, not stop thinking completely.</li>
-              <li>I’m building in public through projects, job applications, technical learning, speaking opportunities, and honest reflections from the messy middle.</li>
-              <li>My goal is to make technical learning feel more human, more useful, and less lonely for beginners figuring it out too.</li>
+              <li>I gave a TEDx talk this year and I am speaking at two security conferences in October. Standing in front of a room that has no obligation to care is the fastest way to find out whether you actually understand what you are explaining.</li>
+              <li>I led a Girls Who Code chapter at Lewis, and I co-founded an open documentation project publishing educational and technical material in English and Roman Urdu, for readers the existing material was never written for.</li>
+              <li>I care about using AI without outsourcing your brain. It should help people think better, not stop thinking. In practice that means verifying everything it produces and knowing what should never go into it.</li>
+              <li>Most of the people I have supported arrived braced to be made to feel stupid. Getting someone to a working machine without that happening is the part of this work I actually like.</li>
             </ul>
           </div>
         </div>
@@ -1025,28 +588,31 @@
       <div class="page-shell">
         <div class="section-head">
           <div class="section-kicker">Community AI Initiative</div>
-          <h2 class="section-title">IQRA Digital Skills & AI Readiness Initiative</h2>
+          <h2 class="section-title">IQRA Digital Skills &amp; AI Readiness Initiative</h2>
           <p class="section-copy">
-            A community-centered initiative focused on helping women, homemakers, students, and families build digital confidence, safe technology habits, and beginner-friendly AI skills.
+            Helping women, students, and families build digital confidence, safe technology habits, and beginner-friendly AI skills.
           </p>
         </div>
-
         <div class="project-card initiative-card">
           <h3>About the Initiative</h3>
           <p>
-            Through my volunteer work with IQRA Arabic Academy, I have supported learners and teachers with software, hardware, device, platform, access, digital materials, and training-related technology needs. IQRA began as a local learning effort and grew into an online community serving women and learners across different locations.
+            Through my volunteer work with IQRA Arabic Academy I supported learners and teachers
+            across software, hardware, devices, platforms, access, and training. IQRA began as a
+            local learning effort and grew into an online community serving women and learners in
+            different places.
           </p>
-
           <h3>The Problem</h3>
           <p>
-            Many women and community learners have access to phones, apps, and online tools, but still lack confidence using technology for learning, safety, communication, productivity, and future opportunities. As AI becomes more common, this gap can grow unless communities receive practical, beginner-friendly guidance.
+            Many community learners have phones, apps, and online tools, but not the confidence to
+            use technology for learning, safety, communication, or opportunity. As AI becomes more
+            common, that gap widens unless people get practical, beginner-friendly guidance.
           </p>
-
           <h3>The Next Step</h3>
           <p>
-            The next phase is to expand this work into digital skills and AI readiness workshops, including safe AI use, basic cybersecurity awareness, online learning confidence, responsible prompting, and practical technology skills for everyday life and community leadership.
+            Expanding this into digital skills and AI readiness workshops: safe AI use, basic
+            cybersecurity awareness, online learning confidence, responsible prompting, and
+            practical technology skills for everyday life.
           </p>
-
           <h3>Focus Areas</h3>
           <ul class="soft-list">
             <li>Beginner-friendly AI skills training</li>
@@ -1065,12 +631,11 @@
           <div class="section-kicker">Contact</div>
           <h2>Let’s connect.</h2>
           <p>
-            I’m open to early-career roles in IT support, technical support, IT operations,
-            SOC/NOC, IAM support, and entry-level cybersecurity, especially in the Greater Chicago Area.
-            I’m also open to speaking, writing, and community opportunities around cybersecurity,
-            AI literacy, and international student experiences.
+            I am open to IT support, service desk, IT analyst, and entry-level security operations
+            roles in the Greater Chicago Area or remote, and I am available to start immediately.
+            I also welcome speaking and community opportunities around cybersecurity, AI literacy,
+            and international student experiences.
           </p>
-
           <div class="actions" style="justify-content:center;">
             <a class="btn btn-primary" href="mailto:aaileenuni@gmail.com">Email Me</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/aaileensyed" target="_blank" rel="noopener">LinkedIn</a>
@@ -1081,10 +646,9 @@
       </div>
     </section>
   </main>
-
   <footer>
     <div class="page-shell">
-      © 2026 Aaileen Sarwar Syed. Built for clear technical work, useful courage, and brave attempts.
+      © 2026 Aaileen Sarwar Syed. Built for clear technical work and brave attempts.
     </div>
   </footer>
 </body>
